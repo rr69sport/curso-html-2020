@@ -2,112 +2,95 @@
 
 ## Vocabulario web
 
-IP
-: Es el identificador numérico de una web, es único y representa la dirección donde está el ordenador que contiene esa página web.
+**IP:** Es el identificador numérico de una web, es único y representa la dirección donde está el ordenador que contiene esa página web.
 
-Dominio web / URL
-: Uniform Resources Locator. Es el nombre asociado a la IP que utilizamos para solicitar recursos, en nuestro caso un sitio web.
+**Dominio web / URL:** Uniform Resources Locator. Es el nombre asociado a la IP que utilizamos para solicitar recursos, en nuestro caso un sitio web.
 
-DNS
-: Domain Name System. Es un servidor cuya principalfunción es traducir el nombre de dominio a ssu identificador único.
+**DNS** Domain Name System. Es un servidor cuya principalfunción es traducir el nombre de dominio a ssu identificador único.
 
-: Por ejemplo si escribimos en el buscador: 216.58.210.163 esto nos lleva a www.google.com porque 216.58.210.163 es el IP asociado a www.google.com. Esto lo hace porque tiene una serie de tablas asociadas de nombres vs IP, por eso es capaz de saber a quien corresponde tanto el nombre como la IP.
+Por ejemplo si escribimos en el buscador: 216.58.210.163 esto nos lleva a www.google.com porque 216.58.210.163 es el IP asociado a www.google.com. Esto lo hace porque tiene una serie de tablas asociadas de nombres vs IP, por eso es capaz de saber a quien corresponde tanto el nombre como la IP.
 
-Sitio web
-: Es un conjunto de uno o varios recursos web alojados en el mismo dominio.
+**Sitio web:** Es un conjunto de uno o varios recursos web alojados en el mismo dominio.
 
-Hosting
-: Es el almacenamiento del servidor web. El disco duro donde el servidor guarda los recursos.
+**Hosting:** Es el almacenamiento del servidor web. El disco duro donde el servidor guarda los recursos.
 
-Petición
-: Es la acción de pedir recursos a un servidor.
+**Petición:** Es la acción de pedir recursos a un servidor.
 
 ---
 
 ## Qué es HTML
 
-Es un lenguaje de marcado de hipertexto (Hyper text Markup Languaje).
+* Es un lenguaje de marcado de hipertexto (Hyper text Markup Languaje).
 
-No es un lenguaje de programación, es un lenguaje de estructura.
+* No es un lenguaje de programación, es un lenguaje de estructura.
 
-Es la base con la que están creadas TODAS las webs del mundo.
+* Es la base con la que están creadas TODAS las webs del mundo.
 
-Cada etiqueta le dice al navegador y a los motores de búsqueda cuál es ka estructura de los documentos, elementos, organización, etc.
+* Cada etiqueta le dice al navegador y a los motores de búsqueda cuál es ka estructura de los documentos, elementos, organización, etc.
 
-HTML no se encarga del aspecto visual de la página.
+* HTML no se encarga del aspecto visual de la página.
 
-HTML se encarga de dar estructura semántica a la página.
+* HTML se encarga de dar estructura semántica a la página.
 
 ---
 
 ## Historia de HTML
 
-1989
+**1989** Inicia su desarrollo
 
-: **Inicia su desarrollo**
+* Era un boceto de lo que se quería conseguir.
 
-: Era un boceto de lo que se quería conseguir.
+**1991** Se lanza la web
 
-1991
+* La web es no es lo mismo que internet. La web es el conjunto de documentos que tenemos disponibles.Documentos es cualquier página web o sitio web. Internet por otro lado es la infraestructura que nos permite ver esos archivos, llámese ordenadores, routers, antenas, etc.
 
-: **Se lanza la web**
+**Se basa en 3 conceptos:**
 
-: La web es no es lo mismo que internet. La web es el conjunto de documentos que tenemos disponibles. Documentos es cualquier página web o sitio web. Internet por otro lado es la infraestructura que nos permite ver esos archivos, llámese ordenadores, routers, antenas, etc.
+* ***http:***
+  HyperText Transfer Protocol. Es el conjunto de normas que se debe seguir para transmitir esa información a través de la red.
 
-: **Se basa en 3 conceptos**
+* ***html***
+    HyperText Markup Language. Lenguaje sobre el que está escrito todos los sitios web.
 
-: - ***http*** - HyperText Transfer Protocol. Es el conjunto de normas que se debe seguir para transmitir esa información a través de la red.
+* ***url***
+    Es la dirección donde están ubicados esos sitios web. Es como el DNI de los sitios web, solo puede haber uno por sitio web.
 
-: - ***html*** - HyperText Markup Language. Lenguaje sobre el que está escrito todos los sitios web.
+**1992** Lanzamiento de HTML
 
-: - ***url*** - Es la dirección donde están ubicados esos sitios web. Es como el DNI de los sitios web, solo puede haber uno por sitio web.
+* Nació de SMGL que era muy complicado de usar. Entonces Tim Bernes Lee, que se le considera el padre de la web, creó HTML.
 
-1992
+**1994** Creación de la W3C
 
-: **Lanzamiento de HTML**
+* El consorcio que define los estándares de la web
 
-: - Nació de SMGL que era muy complicado de usar. Entonces Tim Bernes Lee, que se le considera el padre de la web, creó HTML.
+**1998** Se lanza HTML4
 
-1994
+* Fue la versión que más duró de HTML. Saliendo una nueva versión para el 2008.
 
-: **Creación de la W3C**
+**1999** Nace HTML 4.1 - XHTML
 
-: - El consorcio que define los estándares de la web
+* Actualización del Estandar HTML4
 
-1998
+* Es una mezcla del lenguaje XML y HTML. El objetivo de W3C era que este estándar fuera el definitivo.
 
-: Se lanza HTML, que fue la versión que más duró de HTML.
+* Los desarrolladores no estaban contentos con esta versión de HTML porque era muy restrictiva. Y a raíz de eso en 2004, nace la WHATWG
 
-1999
+**WHATWG** ¿Qué es?
 
-: **Nace HTML 4.1 - XHTML**
+* Es un consorcio paralelo a la W3C. Hasta ese momento (2004) solo la W3C dictaba las normas de lo que estaba bien o mal en HTML.
 
-: - Actualización del Estandar HTML4
+**2008** HTML5
 
-: - Es una mezcla del lenguaje XML y HTML. El objetivo de W3C era que este estándar fuera el definitivo.
+* Lanzado por la WHATWG de forma independiente.
 
-: - Los desarrolladores no estaban contentos con esta versión de HTML porque era muy restrictiva. Y a raíz de eso en 2004, nace la WHATWG
+* *La W3C no estaba de acuerdo con este estándar y seguía trabajando con XHTML
 
-WHATWG
+* Sin embargo la comunidad estaba muy conforme con HTML5 y se empezó a usar de forma masiva.
 
-: Era un consorcio paralelo a la W3C. Hasta ese momento (2004) solo la W3C dictaba las normas de lo que estaba bien o mal en HTML.
+**2014** Estándar HTML (W3C)
 
-2008
+* Para ese año, la W3C se retracta de posición y lanza de forma oficial HTML5
 
-: **HTML5**
+**2017** HTML5.2
 
-: - Lanzado por la WHATWG de forma independiente.
-
-: - La W3C no estaba de acuerdo con este estándar y seguía trabajando con XHTML
-
-: - Sin embargo la comunidad estaba muy conforme con HTML5 y se empezó a usar de forma masiva.
-
-2014
-
-: **Estándar HTML (W3C)**
-
-: - Para ese año, la W3C se retracta de posición y lanza de forma oficial HTML5
-
-2017
-
-: Se lanza la versión que se usa hasta día de hoy, la versión HTML5.2
+* Se lanza la versión que se usa hasta día de hoy, la versión HTML5.2

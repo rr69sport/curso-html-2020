@@ -1,71 +1,60 @@
 # Historia de HTML
 
-1989
+**1989** Inicia su desarrollo
 
-: **Inicia su desarrollo**
+* Era un boceto de lo que se quería conseguir.
 
-: Era un boceto de lo que se quería conseguir.
+**1991** Se lanza la web
 
-1991
+* La web es no es lo mismo que internet. La web es el conjunto de documentos que tenemos disponibles.Documentos es cualquier página web o sitio web. Internet por otro lado es la infraestructura que nos permite ver esos archivos, llámese ordenadores, routers, antenas, etc.
 
-: **Se lanza la web**
+**Se basa en 3 conceptos:**
 
-: La web es no es lo mismo que internet. La web es el conjunto de documentos que tenemos disponibles. Documentos es cualquier página web o sitio web. Internet por otro lado es la infraestructura que nos permite ver esos archivos, llámese ordenadores, routers, antenas, etc.
+* ***http:***
+  HyperText Transfer Protocol. Es el conjunto de normas que se debe seguir para transmitir esa información a través de la red.
 
-: **Se basa en 3 conceptos**
+* ***html***
+    HyperText Markup Language. Lenguaje sobre el que está escrito todos los sitios web.
 
-: - ***http*** - HyperText Transfer Protocol. Es el conjunto de normas que se debe seguir para transmitir esa información a través de la red.
+* ***url***
+    Es la dirección donde están ubicados esos sitios web. Es como el DNI de los sitios web, solo puede haber uno por sitio web.
 
-: - ***html*** - HyperText Markup Language. Lenguaje sobre el que está escrito todos los sitios web.
+**1992** Lanzamiento de HTML
 
-: - ***url*** - Es la dirección donde están ubicados esos sitios web. Es como el DNI de los sitios web, solo puede haber uno por sitio web.
+* Nació de SMGL que era muy complicado de usar. Entonces Tim Bernes Lee, que se le considera el padre de la web, creó HTML.
 
-1992
+**1994** Creación de la W3C
 
-: **Lanzamiento de HTML**
+* El consorcio que define los estándares de la web
 
-: - Nació de SMGL que era muy complicado de usar. Entonces Tim Bernes Lee, que se le considera el padre de la web, creó HTML.
+**1998** Se lanza HTML4
 
-1994
+* Fue la versión que más duró de HTML. Saliendo una nueva versión para el 2008.
 
-: **Creación de la W3C**
+**1999** Nace HTML 4.1 - XHTML
 
-: - El consorcio que define los estándares de la web
+* Actualización del Estandar HTML4
 
-1998
+* Es una mezcla del lenguaje XML y HTML. El objetivo de W3C era que este estándar fuera el definitivo.
 
-: Se lanza HTML, que fue la versión que más duró de HTML.
+* Los desarrolladores no estaban contentos con esta versión de HTML porque era muy restrictiva. Y a raíz de eso en 2004, nace la WHATWG
 
-1999
+**WHATWG** ¿Qué es?
 
-: **Nace HTML 4.1 - XHTML**
+* Es un consorcio paralelo a la W3C. Hasta ese momento (2004) solo la W3C dictaba las normas de lo que estaba bien o mal en HTML.
 
-: - Actualización del Estandar HTML4
+**2008** HTML5
 
-: - Es una mezcla del lenguaje XML y HTML. El objetivo de W3C era que este estándar fuera el definitivo.
+* Lanzado por la WHATWG de forma independiente.
 
-: - Los desarrolladores no estaban contentos con esta versión de HTML porque era muy restrictiva. Y a raíz de eso en 2004, nace la WHATWG
+* *La W3C no estaba de acuerdo con este estándar y seguía trabajando con XHTML
 
-WHATWG
+* Sin embargo la comunidad estaba muy conforme con HTML5 y se empezó a usar de forma masiva.
 
-: Era un consorcio paralelo a la W3C. Hasta ese momento (2004) solo la W3C dictaba las normas de lo que estaba bien o mal en HTML.
+**2014** Estándar HTML (W3C)
 
-2008
+* Para ese año, la W3C se retracta de posición y lanza de forma oficial HTML5
 
-: **HTML5**
+**2017** HTML5.2
 
-: - Lanzado por la WHATWG de forma independiente.
-
-: - La W3C no estaba de acuerdo con este estándar y seguía trabajando con XHTML
-
-: - Sin embargo la comunidad estaba muy conforme con HTML5 y se empezó a usar de forma masiva.
-
-2014
-
-: **Estándar HTML (W3C)**
-
-: - Para ese año, la W3C se retracta de posición y lanza de forma oficial HTML5
-
-2017
-
-: Se lanza la versión que se usa hasta día de hoy, la versión HTML5.2
+* Se lanza la versión que se usa hasta día de hoy, la versión HTML5.2
