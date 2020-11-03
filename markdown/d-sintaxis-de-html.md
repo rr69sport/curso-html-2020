@@ -1,6 +1,6 @@
 # Sintaxis de HTML
 
-## Archivo principal
+## Nombrar archivos
 
 Lo normal para nombrar el archivo princpial de la página es `index.html`.
 
