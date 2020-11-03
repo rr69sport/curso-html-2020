@@ -1,4 +1,4 @@
-# Curso 2020 de HTML
+# Curso 2020 de HTML [ver en el navegador](https://rr69sport.github.io/curso-html-2020/)
 
 ## Vocabulario web
 
