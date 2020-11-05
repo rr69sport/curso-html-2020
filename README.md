@@ -26,7 +26,7 @@ Por ejemplo si escribimos en el buscador: 216.58.210.163 esto nos lleva a www.go
 
 * Es la base con la que están creadas TODAS las webs del mundo.
 
-* Cada etiqueta le dice al navegador y a los motores de búsqueda cuál es ka estructura de los documentos, elementos, organización, etc.
+* Cada etiqueta le dice al navegador y a los motores de búsqueda cuál es la estructura de los documentos, elementos, organización, etc.
 
 * HTML no se encarga del aspecto visual de la página.
 
