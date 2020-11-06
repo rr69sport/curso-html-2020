@@ -13,7 +13,7 @@
         <!-- Aquí van todas las etiquetas con metadatos necesarios para el navegador -->
 
         <!-- El nombre de la página y que aparecerá en la pestaña del navegador -->
-        <title>Title</title>
+        <title>Título de la página</title>
 
         <!-- Indica al navegador el set de caractéres latinos.
         Por defecto si no lo declaramos explícitamente, 
