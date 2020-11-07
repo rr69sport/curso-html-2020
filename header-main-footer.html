@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Header - Main - Footer</title>
+
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        
+		<meta name="author" content="@rr69sport" />
+		<meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+        
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Curso de HTML5 versión 2020" />
+		<meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+		<meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        
+		<meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@RichardRamSua" />
+		<meta name="twitter:creator" content="@RichardRamSua" />
+		<meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+        <meta name="twitter:image" content="" />
+
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./encabezados.html">Sección anterior</a>
+                    </li>
+                    <li>
+                        <a href="#">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Etiquetas: <code>&lt;header&gt;, &lt;main&gt; y &lt;footer&gt;</code></h1>
+            </header>
+            <article>
+                <h2>Común a las 3 etiquetas</h2>
+                <p>Son etiquetas de bloque, que a nivel semántico tienen una importancia específica.</p>
+                <p>A nivel de descendientes directos de <code>&lt;body&gt;</code>, solo puede haber una etiqueta de cada una como hijo directo. Y ninguna de las 3 debe contener como hijo directo a una etiqueta del mismo nombre, por ejemplo: un <code>&lt;header&gt;</code> <strong><em>NO</em></strong> puede ser hijo de otro <code>&lt;header&gt</code>.</p>
+            </article>
+            <article>
+                <h2>
+                    <code>
+                        &lt;header&gt;
+                    </code>
+                </h2>
+                <p>Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes como redes sociales o menú de navegación.</p>
+                <h3>Ejemplo</h3>
+<pre>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a href="./"&gt;Inicio&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="./encabezados.html"&gt;Sección anterior&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;Siguiente sección&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        
+        &lt;form &gt;
+            &lt;fieldset&gt;
+                &lt;input type="text" placeholder="Buscar"&gt;
+                &lt;button type="submit"&gt;Buscar&lt;/button&gt;
+            &lt;/fieldset&gt;
+        &lt;/form&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;!-- Aquí va el contenido principal de todo el documento. --&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;!-- Aquí puede ir información acerca del autor de la sección, datos de derechos de autor o enlaces a documentos relacionados. --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</pre>
+            </article>
+            <article>
+                <h2>
+                    <code>
+                        &lt;main&gt;
+                    </code>
+                </h2>
+                <p>Representa el contenido principal del <em>body</em> de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</p>
+                <p>Solo puede haber uno por página y debe ser hijo directo de body.</p>
+
+                <h3>Ejemplo</h3>
+<pre>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;!-- Aquí puede ir un menú, el logo, redes sociales etc etc. --&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;h1&gt;Título principal&lt;/h1&gt;
+        &lt;p&gt;Una breve descripción.&lt;/p&gt;
+        
+        &lt;article&gt;
+            &lt;h2&gt;Sección importante del tema principal&lt;/h2&gt;
+            &lt;p&gt;Descripción de esa sección.&lt;/p&gt;
+            &lt;p&gt;Más texto o información &lt;/p&gt;
+        &lt;/article&gt;
+
+        &lt;article&gt;
+            &lt;h2&gt;Otra sección importante de la principal&lt;/h2&gt;
+            &lt;p&gt;Algún tipo de información.&lt;/p&gt;
+            &lt;p&gt;Más información relevante &lt;/p&gt;
+            &lt;p&gt;... &lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;!-- Aquí puede ir información acerca del autor de la sección, datos de derechos de autor o enlaces a documentos relacionados. --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</pre>
+            </article>
+            <article>
+                <h2><code>&lt;footer&gt;</code></h2>
+                <p>
+                    Representa un pie de página para el contenido de sección más cercano o el elemento del que desciende, por ejemplo: 
+                    <code>
+                        &lt;article&gt;, 
+                        &lt;aside&gt;, 
+                        &lt;section&gt;, 
+                        &lt;blockquote&gt;, 
+                        &lt;details&gt;, 
+                        &lt;fieldset&gt;, 
+                        &lt;figure&gt;, 
+                        &lt;td&gt;
+                    </code>. 
+                    Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+                </p>
+                <p>
+                    Al igual que <code>&lt;header&gt;</code> 
+                    <strong><em>NO</em></strong> 
+                    debe tener como descendiente otro elemento 
+                    <code>&lt;footer&gt;</code> o 
+                    <code>&lt;header&gt;</code>
+                </p>
+                <h3>Ejemplo</h3>
+<pre>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;!-- Aquí puede ir un menú, el logo, redes sociales etc etc. --&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;!-- Aquí va el contenido principal de todo el documento. --&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;address&gt;
+            Autor del curso Dorian Desings
+            Canal de YouTube <a href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Link</a>
+            &lt;!-- Más información relacionada. --&gt;
+        &lt;/address&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</pre>               
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a href="developer.mozill">MDN</a>.</p>
+        </footer>
+    </body>
+</html>
