@@ -25,7 +25,7 @@ La respuesta es que un `<article>` puede contener elementos `<section>` y un `<s
         <h1>Agrupación de contenido en HTML</h1>
     </header>
     <section>
-        <h2>Etiquetas a nivel de bloque</h2>
+        <h2>Etiquetas de definición explícita</h2>
         <article>
             <header>
                 <h3>Etiqueta article</h3>
@@ -65,7 +65,7 @@ La respuesta es que un `<article>` puede contener elementos `<section>` y un `<s
 </main>
 ```
 
-Como puedes ver, cada artículo tiene sentido por sí solo, y si estuviera en cualquier otro sitio, seguiría teniendo sentido. La etiqueta `<section>` los anida formando un bloque mayor que en este caso es "Etiquetas a nivel de bloque"
+Como puedes ver, cada artículo tiene sentido por sí solo, y si estuviera en cualquier otro sitio, seguiría teniendo sentido. La etiqueta `<section>` los anida formando un bloque mayor que en este caso es "Etiquetas de definición explícita"
 
 ### Ejemplo de `<article>` anidando `<section>`
 

@@ -24,6 +24,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
         <header>
@@ -33,7 +35,7 @@
                         <a href="../">Inicio</a>
                     </li>
                     <li>
-                        <a href="./b_header-main-footer.html">Sección anterior</a>
+                        <a href="./d_header-y-footer.html">Sección anterior</a>
                     </li>
                     <li>
                         <a href="#">Siguiente sección</a>
@@ -43,7 +45,7 @@
         </header>
         <main>
             <header>
-                <h1>Etiquetas con definición explícita</h1>
+                <h1>Etiquetas de definición explícita. Parte II</h1>
             </header>
             <section>
                 <h2>Section, Article, Aside</h2>
@@ -51,7 +53,7 @@
                     <header>
                         <h3>Article</h3>
                     </header>
-                    <p>Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo. Al ser contenido independiente y con sentido po sí mismo, implica que pueda tener un &lt;header&gt; y &lt;footer&gt; propios.</p>
+                    <p>Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo. Al ser contenido independiente y con sentido por sí mismo, implica que pueda tener un <em>header</em> y un <em>footer</em> propios.</p>
                     <footer>
                         <p>Este es el pié de página del artículo.</p>
                     </footer>
@@ -60,10 +62,10 @@
                     <header>
                         <h3>Section</h3>
                     </header>
-                    <p>Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos &lt;section&gt;</p>
+                    <p>Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos <em>section</em></p>
                     <p>
                         <strong>Importante:</strong>
-                        No se debe usar el elemento &lt;section&gt; como un mero contenedor genérico, para esto ya existe &lt;div&gt;, especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección.
+                        No se debe usar el elemento <em>section</em> como un mero contenedor genérico, para esto ya existe <em>div</em>, especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección.
                     </p>
                     <p>Como regla general, el título de una sección debería aparecer en el esquema del documento.</p>
                     <footer>
@@ -72,39 +74,19 @@
                 </article>
                 <article>
                     <header>
-                        <h3>¿Cuál es la forma correcta de anidar etiquetas &lt;section&gt; y &lt;article&gt;?</h3>
+                        <h3>¿Cuál es la forma correcta de anidar etiquetas <em>section</em> y <em>article</em>?</h3>
                     </header>
-                    <p>La respuesta es que un &lt;article&gt; puede contener elementos &lt;section&gt; y un &lt;section&gt; puede contener elementos &lt;article&gt;.</p>
-                    <p>Un ejemplo de artículos anidados en una etiqueta &lt;section&gt;</p>
-<code>
-    <pre>
-        &lt;section&gt;
-            &lt;h2&gt;article, section&lt;/h2&gt;
-            &lt;article&gt;
-                &lt;h3&gt;article&lt;/h3&gt;
-                &lt;p&gt;
-                    Es un contenedor que representa contenido independiente, es decir,
-                    podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo.
-                    Al ser contenido independiente y con sentido po sí mismo,
-                    implica que pueda tener un &lt;header&gt; y &lt;footer&gt; propios.
-                &lt;/p&gt;
-            &lt;/article&gt;
-            &lt;article&gt;
-                &lt;h3&gt;section&lt;/h3&gt;
-                &lt;p&gt;
-                    Es un contenedor genérico que agrupa contenido que está relacionado.
-                    Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos &lt;section&gt;
-                &lt;/p&gt;
-                &lt;p&gt;
-                    &lt;strong&gt;Importante:&lt;/strong&gt;
-                    No se debe usar el elemento &lt;section&gt; como un mero contenedor genérico; para esto ya existe &lt;div&gt;,
-                    especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección.
-                &lt;/p&gt;
-                &lt;p&gt;Como regla general, el título de una sección debería aparecer en el esquema del documento.&lt;/p&gt;
-            &lt;/article&gt;
-        &lt;/section&gt;
-    </pre>
-</code>
+                    <p>La respuesta es que un <em>article</em> puede contener elementos <em>section</em> y un <em>section</em> puede contener elementos <em>article</em>.</p>
+                    <figure>
+                        <figcaption>Ejemplo de una etiqueta <em>section</em> anidando etiquetas <em>article</em></figcaption>
+                        <img src="../assets/imgs/section-anidando-article.png" alt="Etiqueta section anidando la etiqueta article">
+                    </figure>
+                    <p>Como puedes ver, cada artículo tiene sentido por sí solo, y si estuviera en cualquier otro sitio, seguiría teniendo sentido. La etiqueta <em>section</em> los anida formando un bloque mayor que en este caso es "Etiquetas de definición explícita"</p>
+                    <figure>
+                        <figcaption>Ejemplo de una etiqueta <em>article</em> anidando etiquetas section</figcaption>
+                        <img src="../assets/imgs/article-anidando-section.png" alt="Etiqueta article anidando la etiqueta section">
+                    </figure>
+                    <p>Aquí cada sección es un navegador distinto pero los dos pertencen al mismo artículo, en este caso "Navegadores más usados en 2020"</p>
                     <footer>
                         <p>Este es el pié de página del artículo.</p>
                     </footer>
