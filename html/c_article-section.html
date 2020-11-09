@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Section versus Article</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+        
+       <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./b_header-main-footer.html">Sección anterior</a>
+                    </li>
+                    <li>
+                        <a href="#">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Etiquetas con definición explícita</h1>
+            </header>
+            <section>
+                <h2>Section, Article, Aside</h2>
+                <article>
+                    <header>
+                        <h3>Article</h3>
+                    </header>
+                    <p>Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo. Al ser contenido independiente y con sentido po sí mismo, implica que pueda tener un &lt;header&gt; y &lt;footer&gt; propios.</p>
+                    <footer>
+                        <p>Este es el pié de página del artículo.</p>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Section</h3>
+                    </header>
+                    <p>Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos &lt;section&gt;</p>
+                    <p>
+                        <strong>Importante:</strong>
+                        No se debe usar el elemento &lt;section&gt; como un mero contenedor genérico, para esto ya existe &lt;div&gt;, especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección.
+                    </p>
+                    <p>Como regla general, el título de una sección debería aparecer en el esquema del documento.</p>
+                    <footer>
+                        <p>Este es el pié de página del artículo.</p>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>¿Cuál es la forma correcta de anidar etiquetas &lt;section&gt; y &lt;article&gt;?</h3>
+                    </header>
+                    <p>La respuesta es que un &lt;article&gt; puede contener elementos &lt;section&gt; y un &lt;section&gt; puede contener elementos &lt;article&gt;.</p>
+                    <p>Un ejemplo de artículos anidados en una etiqueta &lt;section&gt;</p>
+<code>
+    <pre>
+        &lt;section&gt;
+            &lt;h2&gt;article, section&lt;/h2&gt;
+            &lt;article&gt;
+                &lt;h3&gt;article&lt;/h3&gt;
+                &lt;p&gt;
+                    Es un contenedor que representa contenido independiente, es decir,
+                    podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo.
+                    Al ser contenido independiente y con sentido po sí mismo,
+                    implica que pueda tener un &lt;header&gt; y &lt;footer&gt; propios.
+                &lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h3&gt;section&lt;/h3&gt;
+                &lt;p&gt;
+                    Es un contenedor genérico que agrupa contenido que está relacionado.
+                    Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos &lt;section&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;Importante:&lt;/strong&gt;
+                    No se debe usar el elemento &lt;section&gt; como un mero contenedor genérico; para esto ya existe &lt;div&gt;,
+                    especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección.
+                &lt;/p&gt;
+                &lt;p&gt;Como regla general, el título de una sección debería aparecer en el esquema del documento.&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    </pre>
+</code>
+                    <footer>
+                        <p>Este es el pié de página del artículo.</p>
+                    </footer>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+        </footer>
+    </body>
+</html>

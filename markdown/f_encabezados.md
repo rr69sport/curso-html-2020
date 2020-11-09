@@ -14,33 +14,33 @@ Los elementos de **encabezado** implementan seis niveles de encabezado del docum
 
 ## Estructura correcta de uso de encabezados
 
-Las etiquetas de cabecera pueden anidarse para generar sub-secciones en un mismo documento. Esto beneficia la organización de la información y también ayuda a los usuarios de lectores de pantalla a conocer la jerarquía de los contenidos.
+Las etiquetas de cabecera pueden generar sub-secciones implícitas en un mismo documento, esto significa que un `h2` es una sub-sección del `h1` que lo antecede y así sucesivamente. Esto beneficia la organización de la información y también ayuda a los usuarios de lectores de pantalla a conocer la jerarquía de los contenidos.
 
 1. `h1` Harry Potter - Título principal o sección general
-    1. `h2` Sinoposis - **1**
-    2. `h2` Novelas - **1**
-       1. `h3` Harry Potter y la Piedra Filosofal - **2**
-       2. `h3` Harry Potter y la Cámara de los Secretos - **2**
-       3. `h3` Harry Potter y el Prisionero de Azkaban - **2**
-       4. `h3` Harry Potter y el Cáliz de Fuego - **2**
-       5. `h3` Harry Potter y la Orden del Fenix - **2**
-       6. `h3` Harry Potter y el Príncipe Mestizo - **2**
-       7. `h3` Harry Potter y las Reliquias de la Muerte - **2**
-    3. `h2` Películas - **1**
-       1. `h3` Harry Potter y la Piedra Filosofal - **2**
-       2. `h3` Harry Potter y la Cámara de los Secretos - **2**
-       3. `h3` Harry Potter y el Prisionero de Azkaban - **2**
-       4. `h3` Harry Potter y el Cáliz de Fuego - **2**
-       5. `h3` Harry Potter y la Orden del Fenix - **2**
-       6. `h3` Harry Potter y el Príncipe Mestizo - **2**
-       7. `h3` Harry Potter y las Reliquias de la Muerte (Parte 1) - **2**
-       8. `h3` Harry Potter y las Reliquias de la Muerte (Parte 2) - **2**
+    1. `h2` Sinoposis - (1)
+    2. `h2` Novelas - (1)
+       1. `h3` Harry Potter y la Piedra Filosofal - (2)
+       2. `h3` Harry Potter y la Cámara de los Secretos - (2)
+       3. `h3` Harry Potter y el Prisionero de Azkaban - (2)
+       4. `h3` Harry Potter y el Cáliz de Fuego - (2)
+       5. `h3` Harry Potter y la Orden del Fenix - (2)
+       6. `h3` Harry Potter y el Príncipe Mestizo - (2)
+       7. `h3` Harry Potter y las Reliquias de la Muerte - (2)
+    3. `h2` Películas - (1)
+       1. `h3` Harry Potter y la Piedra Filosofal - (2)
+       2. `h3` Harry Potter y la Cámara de los Secretos - (2)
+       3. `h3` Harry Potter y el Prisionero de Azkaban - (2)
+       4. `h3` Harry Potter y el Cáliz de Fuego - (2)
+       5. `h3` Harry Potter y la Orden del Fenix - (2)
+       6. `h3` Harry Potter y el Príncipe Mestizo - (2)
+       7. `h3` Harry Potter y las Reliquias de la Muerte (Parte 1) - (2)
+       8. `h3` Harry Potter y las Reliquias de la Muerte (Parte 2) - (2)
 
-**1** - Tienen el mismo peso o significado porque son secciones principales dentro de la sección general.
+(1) - Tienen el mismo peso o significado porque son secciones principales dentro de la sección general.
 
-**2** - Representa que el contenido es parte del `h2` que lo antecede.
+(2) - Representa que el contenido es parte del `h2` que lo antecede.
 
-El punto **2** es válido para los `<h4> <h5> y <h6>`, siempre y cuando se mantenga el nivel jerárquico. Un `h6` desciende de un `h5` que a su vez desciende de un `h4` y así sucesivamente.
+El punto (2) es válido para los `<h4> <h5> y <h6>`, siempre y cuando se mantenga el nivel jerárquico. Un `h6` desciende de un `h5` que a su vez desciende de un `h4` y así sucesivamente.
 
 > Extraído de [developer.mozilla.org](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/Elementos_títulos)
 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Etiqueta main</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+        
+       <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./a_encabezados.html">Sección anterior</a>
+                    </li>
+                    <li>
+                        <a href="./c_definicion-explicita.html">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Etiqueta main</h1>
+                <p>Es una etiqueta de definición explícita. Definición en la cuál se agrupan también <em>article, section, header, footer, aside y nav</em>. Puedes ver esa sección de etiquetas <a href="./c_definición-explicita.html">aquí</a>.</p>
+                <p>Representa el contenido principal de la página. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</p>
+                <p>Solo puede haber uno por página y debe ser hijo directo de body.</p>
+            </article>
+            <figure>
+                <figcaption>Ejemplo de uso semántico de la etiqueta main</figcaption>
+<code>
+    <pre>
+        &lt;body&gt;
+            &lt;header&gt;
+                &lt;!-- Aquí puede ir un menú, el logo, redes sociales etc etc. --&gt;
+            &lt;/header&gt;
+            &lt;main&gt;
+                &lt;h1&gt;Título principal&lt;/h1&gt;
+                &lt;p&gt;Una breve descripción.&lt;/p&gt;
+                
+                &lt;article&gt;
+                    &lt;h2&gt;Sección importante del tema principal&lt;/h2&gt;
+                    &lt;p&gt;Descripción de esa sección.&lt;/p&gt;
+                    &lt;p&gt;Más texto o información &lt;/p&gt;
+                &lt;/article&gt;
+
+                &lt;article&gt;
+                    &lt;h2&gt;Otra sección importante de la principal&lt;/h2&gt;
+                    &lt;p&gt;Algún tipo de información.&lt;/p&gt;
+                    &lt;p&gt;Más información relevante &lt;/p&gt;
+                    &lt;p&gt;... &lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/main&gt;
+            &lt;footer&gt;
+                &lt;!-- Aquí puede ir información acerca del autor de la sección, datos de derechos de autor o enlaces a documentos relacionados. --&gt;
+            &lt;/footer&gt;
+        &lt;/body&gt;
+    </pre>
+</code>
+            </figure>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+        </footer>
+    </body>
+</html>

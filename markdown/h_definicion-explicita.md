@@ -1,4 +1,4 @@
-# Etiquetas Header, Main y Footer
+# Etiqueta Main
 
 ## Comunes a las 3 etiquetas
 
@@ -53,7 +53,7 @@ Representa el contenido principal del `<body>` de un documento o aplicación. El
 
 Solo puede haber uno por página y debe ser hijo directo de body.
 
-### Ejemplo Ejemplo de `<main>`
+### Ejemplo de `<main>`
 
 ```html
 <body>
