@@ -1,6 +1,6 @@
 # Encabezados
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](e_estructura.md) [Siguiente](g_etiqueta-main.md)
 
 Los elementos de **encabezado** implementan seis niveles de encabezado del documento. `<h1>` es el más importante, y `<h6>`el menos importante. Un encabezado describe de forma breve el tema de la sección que representa.
 

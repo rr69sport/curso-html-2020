@@ -1,6 +1,6 @@
 # Estructura de una página web
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](d_sintaxis.md) [Siguiente](f_encabezados.md)
 
 ```html
 <!-- Establece el tipo de estandar del documento (HTML5) -->

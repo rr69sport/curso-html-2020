@@ -1,6 +1,6 @@
 # Etiqueta Main
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](f_encabezados.md) [Siguiente](h_header-y-footer.md)
 
 Es una etiqueta de definición explícita. Definición en la cuál se agrupan también **article, section, header, footer, aside y nav**. Puedes ver esa sección de etiquetas [aquí](h_header-y-footer.md)
 

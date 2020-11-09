@@ -1,14 +1,16 @@
-# Article y Section
+# Etiquetas de definición explícita. Parte II
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](h_header-y-footer.md) [Siguiente](j_aside.md)
 
-## `<section>`
+## Article, Section
+
+## Section
 
 Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos `<section>`
 > **Importante:**
 > No se debe usar el elemento `<section>` como un mero contenedor genérico; para esto ya existe `<div>`, especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección. Como regla general, el título de una sección debería aparecer en el esquema del documento.
 
-## `<article>`
+## Article
 
 Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo. Al ser contenido independiente y con sentido po sí mismo, implica que pueda tener un `<header>` y `<footer>` propios.
 
@@ -110,4 +112,4 @@ Como puedes ver, cada artículo tiene sentido por sí solo, y si estuviera en cu
 
 Aquí cada sección es un navegador distinto pero los dos pertencen al mismo artículo.
 
-[Inicio](../README.md) [Anterior](h_header-y-footer.md) [Siguiente](i_article-y-section.md)
+[Inicio](../README.md) [Anterior](h_header-y-footer.md) [Siguiente](j_aside.md)

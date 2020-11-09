@@ -1,6 +1,6 @@
-# Etiquetas de definición explícita
+# Etiquetas de definición explícita. Parte I
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](g_etiqueta-main.md) [Siguiente](i_article-y-section.md)
 
 ¿Cuáles son éstas etiquetas?
 

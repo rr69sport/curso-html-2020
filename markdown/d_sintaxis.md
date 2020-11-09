@@ -1,6 +1,6 @@
 # Sintaxis de HTML
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](c_vocabulario-web.md) [Siguiente](e_estructura.md)
 
 ## Nombrar archivos
 

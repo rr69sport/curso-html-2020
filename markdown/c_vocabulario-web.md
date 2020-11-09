@@ -1,6 +1,6 @@
 # Vocabulario web
 
-[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+[Inicio](../README.md) [Anterior](b_que-es-html.md) [Siguiente](d_sintaxis.md)
 
 **IP:** Es el identificador numérico de una web, es único y representa la dirección donde está el ordenador que contiene esa página web.
 
