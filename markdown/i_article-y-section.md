@@ -107,3 +107,5 @@ Como puedes ver, cada artículo tiene sentido por sí solo, y si estuviera en cu
 ```
 
 Aquí cada sección es un navegador distinto pero los dos pertencen al mismo artículo.
+
+[Inicio](../README.md) [Anterior](h_header-y-footer.md) [Siguiente](i_article-y-section.md)

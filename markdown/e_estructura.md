@@ -27,3 +27,5 @@
     </body>
 </html>
 ```
+
+[Inicio](../README.md) [Anterior](d_sintaxis.md) [Siguiente](f_encabezados.md)

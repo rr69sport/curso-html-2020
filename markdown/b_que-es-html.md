@@ -11,3 +11,5 @@
 * HTML no se encarga del aspecto visual de la página.
 
 * HTML se encarga de dar estructura semántica a la página.
+
+[Inicio](../README.md) [Anterior](a_hitoria.md) [Siguiente](c_vocabulario-web.md)

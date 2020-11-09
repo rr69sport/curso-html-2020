@@ -76,3 +76,5 @@ Al igual que `<header>` **NO** debe tener como descendiente otro elemento `<foot
     </footer>
 </body>
 ```
+
+[Inicio](../README.md) [Anterior](g_etiqueta-main.md) [Siguiente](i_article-y-section.md)

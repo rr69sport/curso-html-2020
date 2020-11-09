@@ -1,5 +1,7 @@
 # Historia de HTML
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 **1989** Inicia su desarrollo
 
 * Era un boceto de lo que se quería conseguir.

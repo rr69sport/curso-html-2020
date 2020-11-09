@@ -13,3 +13,5 @@ Por ejemplo si escribimos en el buscador: 216.58.210.163 esto nos lleva a www.go
 **Hosting:** Es el almacenamiento del servidor web. El disco duro donde el servidor guarda los recursos.
 
 **Petición:** Es la acción de pedir recursos a un servidor.
+
+[Inicio](../README.md) [Anterior](b_que-es-html.md) [Siguiente](d_sintaxis.md)

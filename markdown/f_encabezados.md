@@ -10,8 +10,6 @@ Los elementos de **encabezado** implementan seis niveles de encabezado del docum
 >
 > * Con el elemento `<section>`, es recomendable evitar usar más de un `<h1>` en una página, Cuando se usan secciones, se debería usar un `<h1>` por sección.
 
----
-
 ## Estructura correcta de uso de encabezados
 
 Las etiquetas de cabecera pueden generar sub-secciones implícitas en un mismo documento, esto significa que un `h2` es una sub-sección del `h1` que lo antecede y así sucesivamente. Esto beneficia la organización de la información y también ayuda a los usuarios de lectores de pantalla a conocer la jerarquía de los contenidos.
@@ -44,4 +42,4 @@ El punto (2) es válido para los `<h4> <h5> y <h6>`, siempre y cuando se manteng
 
 > Extraído de [developer.mozilla.org](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/Elementos_títulos)
 
----
+[Inicio](../README.md) [Anterior](e_estructura.md) [Siguiente](g_etiqueta-main.md)

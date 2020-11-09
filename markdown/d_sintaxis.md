@@ -9,3 +9,5 @@ Los navegadores cuando tienen un link con una ruta a una carpeta `./mi/ruta/de/c
 ## Sintaxis de una etiqueta HTML
 
 Todas las etiquetas comienzan con el signo menor que `<`, el nombre de la etiqueta, el signo de mayor que `>`. Y luego para cerrar la etiqueta es lo mismo pero con el añadido de una barra `/` entre el signo menor que `<` y el nombre de la etiqueta `<etiqueta> <= Etiqueta de apertura | Etiqueta de cierre => </etiqueta>`.
+
+[Inicio](../README.md) [Anterior](c_vocabulario-web.md) [Siguiente](e_estructura.md)

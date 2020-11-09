@@ -36,3 +36,5 @@ Ejemplo de uso semántico de la etiqueta `main`
     </footer>
 </body>
 ```
+
+[Inicio](../README.md) [Anterior](f_encabezados.md) [Siguiente](h_header-y-footer.md)
