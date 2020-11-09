@@ -1,5 +1,7 @@
 # Estructura de una página web
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 ```html
 <!-- Establece el tipo de estandar del documento (HTML5) -->
 <!DOCTYPE html>

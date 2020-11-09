@@ -1,5 +1,7 @@
 # Article y Section
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 ## `<section>`
 
 Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos `<section>`

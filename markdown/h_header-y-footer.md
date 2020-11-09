@@ -1,5 +1,7 @@
 # Etiquetas de definición explícita
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 ¿Cuáles son éstas etiquetas?
 
 Estas etiquetas son: [main](g_etiqueta-main.md), article, section, header, footer, aside y nav

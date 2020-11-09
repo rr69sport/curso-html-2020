@@ -1,5 +1,7 @@
 # Vocabulario web
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 **IP:** Es el identificador numérico de una web, es único y representa la dirección donde está el ordenador que contiene esa página web.
 
 **Dominio web / URL:** Uniform Resources Locator. Es el nombre asociado a la IP que utilizamos para solicitar recursos, en nuestro caso un sitio web.

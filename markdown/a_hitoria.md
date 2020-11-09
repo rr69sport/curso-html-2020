@@ -60,3 +60,5 @@
 **2017** HTML5.2
 
 * Se lanza la versión que se usa hasta día de hoy, la versión HTML5.2
+
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)

@@ -1,5 +1,7 @@
 # Qué es HTML
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 * Es un lenguaje de marcado de hipertexto (Hyper text Markup Languaje).
 
 * No es un lenguaje de programación, es un lenguaje de estructura.

@@ -1,5 +1,7 @@
 # Sintaxis de HTML
 
+[Inicio](../README.md) [Siguiente](b_que-es-html.md)
+
 ## Nombrar archivos
 
 Lo normal para nombrar el archivo princpial de la página es `index.html`.
