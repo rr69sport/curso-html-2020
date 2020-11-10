@@ -1,6 +1,6 @@
 # Etiquetas de definición explícita. Parte final
 
-[Inicio](../README.md) [Anterior](i_article-y-section.md) [Siguiente](j_aside.md)
+[Inicio](../README.md) [Anterior](i_article-y-section.md) [Siguiente](k_elementos-de-bloque.md)
 
 ## Aside
 
@@ -46,3 +46,5 @@ Ejemplo de uso semántico de una etiqueta Aside
     </footer>
 </body>
 ```
+
+[Inicio](../README.md) [Anterior](i_article-y-section.md) [Siguiente](k_elementos-de-bloque.md)
