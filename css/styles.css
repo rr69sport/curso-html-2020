@@ -74,6 +74,7 @@ figure {
 .figure {
     display: flex;
     flex-direction: column;
+    max-width: 800px;
     background-color: var(--bg_color_darken);
 }
 .figcaption {
