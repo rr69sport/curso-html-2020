@@ -6,3 +6,9 @@ Los elementos de bloquer son aquellos elementos que ocupan todo el ancho disponi
 
 Un elemento de bloque en vista de desarrollador de Firefox
 ![Forma visual de un elemento de bloque](../assets/imgs/elementos-de-bloque.png)
+
+Como marca el fondo azulado, el H1 ocupa todo el ancho que puede anque su contenido no llegue a ocuparlo.
+
+[Lista de elementos de bloque descritos por MDN](https://developer.mozilla.org/es/docs/Web/HTML/Block-level_elements#Elementos)
+
+[Inicio](../README.md) [Anterior](j_aside.md) [Siguiente](k_elementos-de-bloque.md)

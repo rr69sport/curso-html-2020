@@ -3,12 +3,32 @@
 *::before {
     box-sizing: border-box;
 }
+html {
+    font: 18px 'Work Sans', sans-serif;
+}
 body {
-    /* margin: 0; */
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    margin: 0;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    background-color: #eee;
+    color: #141414;
 }
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+article {
+    border-bottom: 1px solid #ddd;
+}
+footer {
+    margin-top: auto;
 }
