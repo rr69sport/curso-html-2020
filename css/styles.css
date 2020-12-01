@@ -49,10 +49,10 @@ figure {
     background-color: var(--bg_color_lighten);
     color: var(--text_color);
 }
+
 .main-menu {
     display: flex;
     flex-direction: column;
-    padding: 1px; /* Evita colpsado de márgenes de los main-menu__item */
     background-color: var(--bg_color_darken);
 }
 .main-menu__item {
@@ -61,10 +61,10 @@ figure {
 }
 .main-menu__link {
     margin: .5rem;
+    padding: .5rem;
 }
 .main-menu__link--go-top {
     flex: 1;
-    padding: .5rem;
 
     background-color: var(--bg_color_lighten);
     text-decoration: none;
@@ -83,14 +83,16 @@ figure {
 .figcaption {
     padding: 1rem;
 }
+
 .footer {
     margin-top: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     html {
         font-size: 18px;
     }
+    
     .main-menu {
         flex-direction: row;
     }
