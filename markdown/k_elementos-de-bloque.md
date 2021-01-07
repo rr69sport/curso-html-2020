@@ -1,6 +1,6 @@
 # Elementos de bloque
 
-[Inicio](../README.md) [Anterior](j_aside.md) [Siguiente](k_elementos-de-bloque.md)
+[Inicio](../README.md) [Anterior](j_aside.md) [Siguiente](l_elementos-de-linea.md)
 
 Los elementos de bloquer son aquellos elementos que ocupan todo el ancho disponible para ocupar aunque el contenido no lo haga, por lo tanto cada elemento de bloque que sea añadido a continuación saltarán a la siguiente línea.
 
@@ -11,4 +11,4 @@ Como marca el fondo azulado, el H1 ocupa todo el ancho que puede anque su conten
 
 [Lista de elementos de bloque descritos por MDN](https://developer.mozilla.org/es/docs/Web/HTML/Block-level_elements#Elementos)
 
-[Inicio](../README.md) [Anterior](j_aside.md) [Siguiente](k_elementos-de-bloque.md)
+[Inicio](../README.md) [Anterior](j_aside.md) [Siguiente](l_elementos-de-linea.md)
