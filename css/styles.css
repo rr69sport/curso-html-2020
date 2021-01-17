@@ -83,6 +83,7 @@ figure {
     align-items: center;
 
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
     
     background-color: var(--bg_color_darken);
 }
@@ -112,6 +113,14 @@ figure {
 }
 .definition-list__desc {
     margin-left: 0;
+}
+
+.blockuote {
+    margin-left: 0;
+    padding: .15rem 1rem .15rem 2rem;
+
+    background-color: var(--bg_color_darken);
+    border-left: 5px solid;
 }
 
 .footer {
