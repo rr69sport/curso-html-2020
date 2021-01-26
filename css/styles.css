@@ -51,6 +51,7 @@ figure {
 
     background-color: var(--bg_color_lighten);
     color: var(--text_color);
+    word-break: break-word;
 }
 
 .main-menu {

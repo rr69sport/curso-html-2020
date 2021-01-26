@@ -65,12 +65,13 @@
                     </figure>
                     <p>La etiqueta de un enlace se representa con la letra <em>a</em> que significa <strong>Anchor</strong> en inglés, o <strong>Ancla</strong> en español.</p>
                     <p>Todo enlace para que funcione como tal debe ser una etiqueta <code>&lt;a&gt;</code> con su etiqueta de cierre <code>&lt;/a&gt;</code> obligatoria. También es obligatorio el atributo <code>href=""</code> ya que ahí es donde le decimos al navegador donde tiene que ir al momento de clickear el enlace, siendo visible al usuario el texto que lleve dentro de la etiqueta como tal, en el caso de la imagen <span class="emphasis">YouTube</span>.</p>
-                    <p>Por defecto un enlace cuando lo clickeamos, se abre en la misma ventana que estamos al momento de hacer click. Eso es porque por defecto tiene un atributo que es opcional llamado <code>target=""</code>. Este atributo por defecto está definido en <code>target="self"</code>. Pero si queremos que el enlace se abra en otra ventana diferente a la que estamos, debemos declararlo en <code>target="_blanck"</code>.</p>
+                    <p>Por defecto un enlace cuando lo clickeamos, se abre en la misma ventana que estamos al momento de hacer click. Eso es porque por defecto tiene un atributo que es opcional llamado <code>target=""</code>. Este atributo por defecto está definido en <code>target="_self"</code>. Pero si queremos que el enlace se abra en otra ventana diferente a la que estamos, debemos declararlo en <code>target="_blanck"</code>.</p>
                     <figure class="figure">
                         <figcaption class="figcaption">Atributo target</figcaption>
                         <img src="../assets/imgs/enlace_black.png" alt="Usando el atributo _black en los enlaces">
                     </figure>
                     <p>Hay más opciones para declarar en el atributo <code>target=""</code> pero lás más comunes de usar son estas dos: <code>target="_self"</code> que es la opción por defecto y que abre el enlace en la misma ventana en la que estamos, y <code>target="_blanck"</code> que abre el enlace en una nueva ventana.</p>
+                    <p>Por norma general, cuando uses rutas absolutas se usa <code>_blank</code></p>
                     <section>
                         <h3>Otras opciones del atributo <code>target=""</code></h3>
                         <blockquote class="blockuote" cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a">
@@ -86,14 +87,15 @@
                             </dl>
                         </blockquote>
                         <footer>
-                            <p><small>Extraído de la documentación de la <a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a> sobre el elemento <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a" title="Elemento A">a</a>.</small></p>
+                            <p><small>Extraído de la documentación de la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a> sobre el elemento <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a" title="Elemento A">a</a>.</small></p>
                         </footer>
                     </section>
+                    <p>También existe el atributo <code>download</code> que es un booleano y sirve para descargar el recurso solicitado. Es importante que el recurso esté en tu mismo servidor.</p>
                 </section>
             </article>
         </main>
         <footer>
-            <p>El curso lo dicta <a href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+            <p>El curso lo dicta <a target="_blank" target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
             <nav>
                 <ul class="main-menu">
                     <li class="main-menu__item">
