@@ -1,7 +1,7 @@
 :root {
     --bg_color_lighten: #eee;
-    --bg_color_darken:  #ddd;
-    --text_color:       #141414;
+    --bg_color_darken: #ddd;
+    --text_color: #141414;
 }
 *,
 *::after,
@@ -10,12 +10,17 @@
 }
 html {
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 body {
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 2rem;
 }
 a {
@@ -35,6 +40,9 @@ ul {
 figure {
     margin: 0;
 }
+:target {
+    outline: 2px solid #141414;
+}
 
 .body {
     display: flex;
@@ -45,7 +53,7 @@ figure {
 
     margin-right: auto;
     margin-left: auto;
-    
+
     padding-right: 1rem;
     padding-left: 1rem;
 
@@ -64,8 +72,8 @@ figure {
     align-items: center;
 }
 .main-menu__link {
-    margin: .5rem;
-    padding: .5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 .main-menu__link--go-top {
     flex: 1;
@@ -85,7 +93,7 @@ figure {
 
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    
+
     background-color: var(--bg_color_darken);
 }
 .figcaption {
@@ -95,9 +103,9 @@ figure {
 .definition-list {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: .25rem;
+    gap: 0.25rem;
 
-    padding: .25rem;
+    padding: 0.25rem;
 
     background-color: var(--bg_color_darken);
 }
@@ -106,7 +114,7 @@ figure {
 }
 .definition-list__def,
 .definition-list__desc {
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: var(--bg_color_lighten);
 }
 .definition-list__def {
@@ -118,7 +126,7 @@ figure {
 
 .blockuote {
     margin-left: 0;
-    padding: .15rem 1rem .15rem 2rem;
+    padding: 0.15rem 1rem 0.15rem 2rem;
 
     background-color: var(--bg_color_darken);
     border-left: 5px solid;
@@ -132,7 +140,7 @@ figure {
     html {
         font-size: 18px;
     }
-    
+
     .main-menu {
         flex-direction: row;
     }
@@ -148,8 +156,8 @@ figure {
 /* Helpers */
 .emphasis,
 .important {
-    padding-right: .35rem;
-    padding-left: .35rem;
+    padding-right: 0.35rem;
+    padding-left: 0.35rem;
     background-color: #cee;
 }
 .emphasis {

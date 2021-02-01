@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Header - Main - Footer</title>
 
-        <meta charset="UTF-8" />
+<head>
+    <title>Header - Main - Footer</title>
 
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
 
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3" />
-        
-		<meta name="author" content="@rr69sport" />
-		<meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
-        
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Curso de HTML5 versión 2020" />
-		<meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
-		<meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-        
-		<meta name="twitter:title" content="Curso de HTML5 versión 2020" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@RichardRamSua" />
-		<meta name="twitter:creator" content="@RichardRamSua" />
-		<meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
-        <meta name="twitter:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
-        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3" />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="author" content="@rr69sport" />
+    <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
 
-        <link rel="stylesheet" href="../css/styles.css">
-    </head>
-    <body id="body" class="body">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Curso de HTML5 versión 2020" />
+    <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RichardRamSua" />
+    <meta name="twitter:creator" content="@RichardRamSua" />
+    <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+    <meta name="twitter:image" content="" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body id="body" class="body">
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./c_etiqueta-main.html">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./e_article-y-section.html">Sección siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <header>
-            <nav>
-                <ul class="main-menu">
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="../">Inicio</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./c_etiqueta-main.html">Sección anterior</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./e_article-y-section.html">Sección siguiente</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>Etiquetas de definición explícita. Parte I</h1>
         </header>
-        <main>
+        <section>
+            <h2>¿Cuáles son éstas etiquetas?</h2>
+            <p>
+                Estas etiquetas son:
+                <em><a href="./c_etiqueta-main.html">main</a></em>, <em>article, section, header, footer, aside y
+                    nav</em>
+            </p>
+        </section>
+        <section>
+            <h2>¿Qué son estas etiquetas?</h2>
+            <p>
+                Son etiquetas de bloque, que a nivel semántico tienen un
+                significado específico. Tienen una definicón explícita sobre
+                el contenido que agrupan.
+            </p>
+            <section>
+                <h3>Header y Footer</h3>
+                <p>
+                    A nivel de descendientes directos de body, solo puede
+                    haber
+                    <strong>una etiqueta header y una etiqueta footer como hijo
+                        directo</strong>. Y ninguna de las 2 debe anidar una etiqueta del mismo
+                    nombre, por ejemplo: un header <strong>no</strong> puede
+                    ser hijo de otro header.
+                </p>
+            </section>
+        </section>
+
+        <article class="article">
             <header>
-                <h1>Etiquetas de definición explícita. Parte I</h1>
+                <h2>Header</h2>
             </header>
-            <section>
-                <h2>¿Cuáles son éstas etiquetas?</h2>
-                <p>Estas etiquetas son: <em><a href="./c_etiqueta-main.html">main</a></em>, <em>article, section, header, footer, aside y nav</em></p>
-            </section>
-            <section>
-                <h2>¿Qué son estas etiquetas?</h2>
-                <p>Son etiquetas de bloque, que a nivel semántico tienen un significado específico. Tienen una definicón explícita sobre el contenido que agrupan.</p>
-                <section>
-                    <h3>Header y Footer</h3>
-                    <p>A nivel de descendientes directos de body, solo puede haber <strong>una etiqueta header y una etiqueta footer como hijo directo</strong>. Y ninguna de las 2 debe anidar una etiqueta del mismo nombre, por ejemplo: un header <strong>no</strong> puede ser hijo de otro header.</p>
-                </section>
-            </section>
+            <p>
+                Puede contener algunos elementos de encabezado, así como
+                también un logo, un formulario de búsqueda, un nombre de
+                autor y otros componentes como redes sociales o menú de
+                navegación.
+            </p>
+            <figure class="figure">
+                <figcaption class="figcaption">
+                    Ejemplo de uso semántico de la etiqueta <em>header</em>
+                </figcaption>
+                <img src="../assets/imgs/header.png" alt="Uso semántico de la etiqueta header" />
+            </figure>
+        </article>
 
-            <article class="article">
-                <header>
-                    <h2>Header</h2>
-                </header>
-                <p>Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes como redes sociales o menú de navegación.</p>
-                <figure class="figure">
-                    <figcaption class="figcaption">Ejemplo de uso semántico de la etiqueta <em>header</em></figcaption>
-                    <img src="../assets/imgs/header.png" alt="Uso semántico de la etiqueta header">
-                </figure>
-            </article>
+        <article class="article">
+            <header>
+                <h2>Footer</h2>
+            </header>
+            <p>
+                Representa un pie de página para el contenido de sección más
+                cercano o el elemento del que desciende, por ejemplo:
+                <em>article, aside, section, blockquote, details, fieldset,
+                    figure, td</em>. Un pie de página típicamente contiene información acerca
+                de el autor de la sección, datos de derechos de autor o
+                enlaces a documentos relacionados.
+            </p>
+            <figure class="figure">
+                <figcaption class="figcaption">
+                    Ejemplo de uso semántico de la etiqueta <em>footer</em>
+                </figcaption>
+                <img src="../assets/imgs/footer.png" alt="Uso semántico de la etiqueta footer" />
+            </figure>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>
+            El curso lo dicta
+            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
+                YouTube)</a>, y tiene la validación de la
+            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
+            la documentación brindada por la
+            <a target="_blank"
+                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
+        </p>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./c_etiqueta-main.html">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./e_article-y-section.html">Sección siguiente</a>
+                </li>
+                <li class="main-menu__item main-menu__item--go-top">
+                    <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
 
-            <article class="article">
-                <header>
-                    <h2>Footer</h2>
-                </header>
-                <p>Representa un pie de página para el contenido de sección más cercano o el elemento del que desciende, por ejemplo: <em>article, aside, section, blockquote, details, fieldset, figure, td</em>. Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
-                <figure class="figure">
-                    <figcaption class="figcaption">Ejemplo de uso semántico de la etiqueta <em>footer</em></figcaption>
-                    <img src="../assets/imgs/footer.png" alt="Uso semántico de la etiqueta footer">
-                </figure>  
-            </article>
-        </main>
-        <footer class="footer">
-            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
-            <nav>
-                <ul class="main-menu">                    
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="../">Inicio</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./c_etiqueta-main.html">Sección anterior</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./e_article-y-section.html">Sección siguiente</a>
-                    </li>
-                    <li class="main-menu__item main-menu__item--go-top">
-                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
 </html>

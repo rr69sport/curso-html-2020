@@ -1,131 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Rutas absolutas y relativas</title>
-        <meta charset="UTF-8" />
 
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <title>Rutas absolutas y relativas</title>
+    <meta charset="UTF-8" />
 
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta name="author" content="@rr69sport" />
-        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Curso de HTML5 versión 2020" />
-        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+    <meta name="author" content="@rr69sport" />
+    <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
 
-        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@RichardRamSua" />
-        <meta name="twitter:creator" content="@RichardRamSua" />
-        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Curso de HTML5 versión 2020" />
+    <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
 
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
-        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+    <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RichardRamSua" />
+    <meta name="twitter:creator" content="@RichardRamSua" />
+    <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
 
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
 
-        <link rel="stylesheet" href="../css/styles.css" />
-    </head>
-    <body id="body" class="body">
-        <header>
-            <nav>
-                <ul class="main-menu">
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="../">Inicio</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./j_enlaces.html">Sección anterior</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./k_rutas.html">Siguiente sección</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article class="article">
-                <h1>Rutas absolutas y relativas</h1>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body id="body" class="body">
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./j_enlaces.html">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./l_listas.html">Siguiente sección</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="article">
+            <h1>Rutas absolutas y relativas</h1>
+            <section>
+                <h2>Rutas absolutas</h2>
+
+                <p>
+                    Tienen un protocolo,
+                    <a href="/index.html#concepts">http</a> o https (lo
+                    mismo que <a href="/index.html#concepts">http</a> con la
+                    diferencia de que la
+                    <span class="emphasis">s</span> significa
+                    <span class="emphasis">recurso con seguridad</span>) y
+                    son únicas en la red. Se suelen usar para rutas externas
+                    a nuestro sitio web.
+                </p>
+
+                <p>
+                    Una ruta absoluta se ve así:
+                    <em>https://www.youtube.com</em>
+                </p>
+
+                <p>
+                    Una peculiaridad que tiene este tipo de rutas es que el
+                    protocolo si no se declara, el navegador entiende que es
+                    un archivo que está en nuestro servidor, por ejemplo si
+                    ponemos
+                    <span class="emphasis"><code>&lt;a
+                                href="www.yotube.com"&gt;YouTube&lt;/a&gt;</code></span>
+                    y clickeamos en ese enlace nos saltará un mensaje como
+                    este
+                    <span class="emphasis"><code>Cannot GET /html/www.youtube.com</code></span>. Eso significa que no ha
+                    encontrado el archivo
+                    <span class="emphasis">www.youtube.com</span> dentro de
+                    la carpeta <span class="emphasis">html</span>
+                </p>
+            </section>
+            <section>
+                <h2>Rutas relativas</h2>
+
+                <p>
+                    Pueden ser relativas al punto donde nos encontramos o
+                    relativas a la raíz del proyecto.
+                </p>
+
+                <p>No usan protocolo.</p>
+
+                <p>
+                    Si el recurso de encuentra al mismo nivel (en la misma
+                    carpeta) pondremos únicamente el nombre del archivo.
+                </p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        Utilizaremos esta estructura de carpetas para
+                        mostrar ejemplos de los tipos de rutas relativas.
+                    </figcaption>
+                    <img src="../assets/imgs/estructura-de-carpetas.png"
+                        alt="Estructura de carpetas para ejemplo de rutas relativas" />
+                </figure>
+                <p>
+                    Como muestra la imágen, tenemos la carpeta
+                    <span class="emphasis">raiz-del-proyecto</span>, dentro,
+                    dos carpetas más que son:
+                    <span class="emphasis">carpeta-uno</span>,
+                    <span class="emphasis">carpeta-dos</span> y también un
+                    <span class="emphasis">index.html</span>.
+                </p>
                 <section>
-                    <h2>Rutas absolutas</h2>
-
-                    <p>Tienen un protocolo, <a href="/index.html#concepts">http</a> o https (lo mismo que <a href="/index.html#concepts">http</a> con la diferencia de que la <span class="emphasis">s</span> significa <span class="emphasis">recurso con seguridad</span>) y son únicas en la red. Se suelen usar para rutas externas a nuestro sitio web.</p>
-
-                    <p>Una ruta absoluta se ve así: <em>https://www.youtube.com</em></p>
-
+                    <h3>Relativas al punto donde nos encontramos</h3>
                     <p>
-                        Una peculiaridad que tiene este tipo de rutas es que el protocolo si no se declara, el navegador entiende que es un archivo que está en nuestro servidor, por ejemplo si ponemos 
-                        <span class="emphasis"><code>&lt;a href="www.yotube.com"&gt;YouTube&lt;/a&gt;</code></span> 
-                        y clickeamos en ese enlace nos saltará un mensaje como este 
-                        <span class="emphasis"><code>Cannot GET /html/www.youtube.com</code></span>. 
-                        Eso significa que no ha encontrado el archivo 
-                        <span class="emphasis">www.youtube.com</span> dentro de la carpeta <span class="emphasis">html</span></p>
+                        Si necesitamos salir de la carpeta actual usaremos
+                        <span class="emphasis">../</span> se pone uno por
+                        cada nivel (carpeta) que queramos subir.
+                    </p>
+                    <figure class="figure">
+                        <figcaption class="figcaption">
+                            Subiendo niveles desde nos encontramos
+                        </figcaption>
+                        <img src="../assets/imgs/subir-un-nivel.png"
+                            alt="Forma en la que se sube un nivel en las rutas relativas" />
+                    </figure>
+                    <p>
+                        Como muestra la imágen, al escribir
+                        <span class="emphasis">../</span>, lo que estamos
+                        haciendo es salirnos de la carpeta en la que
+                        estamos. Si lo escribimos de nuevo, subiríamos otro
+                        nivel más de carpeta (<span class="emphasis">../../</span>). Se puede subir los niveles que sean
+                        necesarios.
+                        Solo que al ser mucho puede complicarse bastante la
+                        legibilidad humana de la ruta y eso nos lleva al
+                        siguiente ejemplo.
+                    </p>
                 </section>
                 <section>
-                    <h2>Rutas relativas</h2>
-
-                    <p>Pueden ser relativas al punto donde nos encontramos o relativas a la raíz del proyecto.</p>
-
-                    <p>No usan protocolo.</p>
-
-                    <p>Si el recurso de encuentra al mismo nivel (en la misma carpeta) pondremos únicamente el nombre del archivo.</p>
-
+                    <h3>Relativas a la raíz del proyecto</h3>
+                    <p>
+                        Las rutas relativas al proyecto siempre inician
+                        desde la raíz del mismo. Para declarar una ruta
+                        relativa a la raíz del proyecto iniciamos la ruta
+                        con una barra inclinada
+                        <span class="emphasis">"/"</span>. Declarar una ruta
+                        de esta manera elimina la preocupación de saber
+                        cuántos niveles hay que subir para llegar a otro
+                        lado dentro del proyecto, solo basta con declarar
+                        las carpetas a las que hay que acceder para llegar
+                        al punto en cuestión.
+                    </p>
                     <figure class="figure">
-                        <figcaption class="figcaption">Utilizaremos esta estructura de carpetas para mostrar ejemplos de los tipos de rutas relativas.</figcaption>
-                        <img src="../assets/imgs/estructura-de-carpetas.png" alt="Estructura de carpetas para ejemplo de rutas relativas">
+                        <figcaption class="figcaption">
+                            Ejemplo de un ruta relativa al proyecto
+                        </figcaption>
+                        <img src="../assets/imgs/relativa-a-la-raiz.png" alt="Ejemplo de ruta relativa al proyecto" />
                     </figure>
-                    <p>Como muestra la imágen, tenemos la carpeta <span class="emphasis">raiz-del-proyecto</span>, dentro, dos carpetas más que son: <span class="emphasis">carpeta-uno</span>, <span class="emphasis">carpeta-dos</span> y también un <span class="emphasis">index.html</span>.</p>
-                    <section>
-                        <h3>Relativas al punto donde nos encontramos</h3>
-                        <p>Si necesitamos salir de la carpeta actual usaremos <span class="emphasis">../</span> se pone uno por cada nivel (carpeta) que queramos subir.</p>
-                        <figure class="figure">
-                            <figcaption class="figcaption">Subiendo niveles desde nos encontramos</figcaption>
-                            <img src="../assets/imgs/subir-un-nivel.png" alt="Forma en la que se sube un nivel en las rutas relativas">
-                        </figure>
-                        <p>Como muestra la imágen, al escribir <span class="emphasis">../</span>, lo que estamos haciendo es salirnos de la carpeta en la que estamos. Si lo escribimos de nuevo, subiríamos otro nivel más de carpeta (<span class="emphasis">../../</span>). Se puede subir los niveles que sean necesarios. Solo que al ser mucho puede complicarse bastante la legibilidad humana de la ruta y eso nos lleva al siguiente ejemplo.</p>
-                    </section>
-                    <section>
-                        <h3>Relativas a la raíz del proyecto</h3>
-                        <p>Las rutas relativas al proyecto siempre inician desde la raíz del mismo. Para declarar una ruta relativa a la raíz del proyecto iniciamos la ruta con una barra inclinada <span class="emphasis">"/"</span>. Declarar una ruta de esta manera elimina la preocupación de saber cuántos niveles hay que subir para llegar a otro lado dentro del proyecto, solo basta con declarar las carpetas a las que hay que acceder para llegar al punto en cuestión.</p>
-                        <figure class="figure">
-                            <figcaption class="figcaption">Ejemplo de un ruta relativa al proyecto</figcaption>
-                            <img src="../assets/imgs/relativa-a-la-raiz.png" alt="Ejemplo de ruta relativa al proyecto">
-                        </figure>
-                        <p>Como puedes ver, las dos imágenes muestran las mismas sugerencias, la diferencia está en cómo se inicia la ruta hacia donde queremos ir.</p>
-                    </section>
-                    <section>
-                        <h3>Importante saber</h3>
-                        <p>Los servidores y todos los navegadores por defecto, si no se les declara un archivo html al final de la ruta, lo que intentarán cargar es un <strong>index.html</strong>. Si el archivo al que queremos ir, no se llama así, es obligatorio especificar el nombre del archivo y su extensión.</p>
-                        <figure class="figure">
-                            <figcaption class="figcaption">Ejemplo de cada una de las formas</figcaption>
-                            <img src="../assets/imgs/especificando-archivo.png" alt="Cuando se usa index.html y cuando no">
-                        </figure>
-                        <p>En el <span class="emphasis">Ejemplo A</span> por defecto buscará un archivo llamado <strong>index.html</strong>. En el <span class="emphasis">Ejemplo B</span> buscará el archivo <strong>archivo.html</strong>.</p>
-                    </section>
+                    <p>
+                        Como puedes ver, las dos imágenes muestran las
+                        mismas sugerencias, la diferencia está en cómo se
+                        inicia la ruta hacia donde queremos ir.
+                    </p>
                 </section>
-           </article>
-        </main>
-        <footer>
-            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
-            <nav>
-                <ul class="main-menu">
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="../">Inicio</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./j_enlaces.html">Sección anterior</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="./k_rutas.html">Siguiente sección</a>
-                    </li>
-                    <li class="main-menu__item main-menu__item--go-top">
-                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+                <section>
+                    <h3>Importante saber</h3>
+                    <p>
+                        Los servidores y todos los navegadores por defecto,
+                        si no se les declara un archivo html al final de la
+                        ruta, lo que intentarán cargar es un
+                        <strong>index.html</strong>. Si el archivo al que
+                        queremos ir, no se llama así, es obligatorio
+                        especificar el nombre del archivo y su extensión.
+                    </p>
+                    <figure class="figure">
+                        <figcaption class="figcaption">
+                            Ejemplo de cada una de las formas
+                        </figcaption>
+                        <img src="../assets/imgs/especificando-archivo.png"
+                            alt="Cuando se usa index.html y cuando no" />
+                    </figure>
+                    <p>
+                        En el <span class="emphasis">Ejemplo A</span> por
+                        defecto buscará un archivo llamado
+                        <strong>index.html</strong>. En el
+                        <span class="emphasis">Ejemplo B</span> buscará el
+                        archivo <strong>archivo.html</strong>.
+                    </p>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>
+            El curso lo dicta
+            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
+                YouTube)</a>, y tiene la validación de la
+            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
+            la documentación brindada por la
+            <a target="_blank"
+                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
+        </p>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./j_enlaces.html">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./l_listas.html">Siguiente sección</a>
+                </li>
+                <li class="main-menu__item main-menu__item--go-top">
+                    <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
 </html>
