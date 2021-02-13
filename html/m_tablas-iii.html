@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Atributos de las tablas</title>
+        <title>Tablas - Atributos de las tablas</title>
         <meta charset="UTF-8" />
 
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -41,7 +41,7 @@
                         <a class="main-menu__link" href="./m_tablas-ii.html">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-iii.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./m_tablas-iv.html">Siguiente sección</a>
                     </li>
                 </ul>
             </nav>
@@ -66,28 +66,30 @@
                     <figcaption class="figcaption">Uso de colspan y rowspan</figcaption>
                     <img src="../assets/imgs/rowspan-colspan-tablas.png" alt="Forma de usar correctamente rowspan y colspan">
                 </figure>
-                <p>La tabla que muestra la imagen el navegador la representa así:</p>
-                <table>
-                    <caption>Título</caption>
-                    <thead>
-                        <tr>
-                            <th>TH 1 - THEAD</th>
-                            <th>TH 2 - THEAD</th>
-                            <th>TH 3 - THEAD</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="emphasis" rowspan="2" >TD 1 - TBODY</td>
-                            <td class="emphasis" colspan="2">TD 2 / 3 - TBODY</td>
-                        </tr>
-                        <tr>
-                            <td>TD 2 - TBODY</td>
-                            <td>TD 3 - TBODY</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>Como notarás en las celdas coloreadas (por css para que se vea), para que una celda ocupe 2 filas o 2 columnas, es necesario que el lugar de la celda que va a ocupar, no tenga una celda declarada, sino el navegador lo que hace es desbordar la celda que sobra.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">La tabla que muestra la imagen el navegador la representa así:</figcaption>
+                    <table>
+                        <caption>Título</caption>
+                        <thead>
+                            <tr>
+                                <th>TH 1 - THEAD</th>
+                                <th>TH 2 - THEAD</th>
+                                <th>TH 3 - THEAD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="emphasis" rowspan="2" >TD 1 - TBODY</td>
+                                <td class="emphasis" colspan="2">TD 2 / 3 - TBODY</td>
+                            </tr>
+                            <tr>
+                                <td>TD 2 - TBODY</td>
+                                <td>TD 3 - TBODY</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </figure>
+                <p>Como notarás en las celdas coloreadas (por css para que se vea), para que una celda ocupe 2 filas o 2 columnas, es necesario que el lugar de la celda que va a ocupar, no tenga una celda declarada en el html, sino el navegador lo que hace es desbordar la celda que sobra.</p>
             </article>
         </main>
         <footer>
@@ -101,7 +103,7 @@
                         <a class="main-menu__link" href="./m_tablas-ii.html">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-iii.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./m_tablas-iv.html">Siguiente sección</a>
                     </li>
                     <li class="main-menu__item main-menu__item--go-top">
                         <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>

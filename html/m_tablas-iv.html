@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tablas - Seleccionar columnas</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./m_tablas-iii.html">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./m_tablas-iv.html">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Tablas - Parte IV</h1>
+            </header>
+            <article>
+                <h2>Seleccionar columnas</h2>
+                <p>Cuando necesitamos seleccionar una columna, tenemos la etiqueta <strong>colgroup</strong>, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas <em>col</em>como columnas tengamos, cada etiqueta <em>col</em> equivaldrá a una columna siguiendo el mismo orden que tienen en la tabla.</p>
+                <p>Si necesitamos que una etiqueta <em>col</em> agrupe más de una columna, tenemos el stributo <em>span</em> que funciona exactamente igual que <em>rowspan</em> y <em>colspan</em>.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Forma de usar colgroup</figcaption>
+                    <img src="../assets/imgs/colgroup-tablas.png" alt="Forma correcta de usar colgroup en una tabla">
+                </figure>
+                <figure class="figure">
+                    <figcaption class="figcaption">Así representa el navegador lo declarado en en el html de la imagen.</figcaption>
+                    <code>
+                        <table>
+                            <caption>Título</caption>
+                            <colgroup>
+                                <col class="emphasis">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>TH 1 - THEAD</th>
+                                    <th>TH 2 - THEAD</th>
+                                    <th>TH 3 - THEAD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >TD 1 - TBODY</td>
+                                    <td >TD 2 - TBODY</td>
+                                    <td >TD 3 - TBODY</td>
+                                </tr>
+                                <tr>
+                                    <td>TD 1 - TBODY</td>
+                                    <td>TD 2 - TBODY</td>
+                                    <td>TD 3 - TBODY</td>
+                                </tr>
+                                <tr>
+                                    <td>TD 1 - TBODY</td>
+                                    <td>TD 2 - TBODY</td>
+                                    <td>TD 3 - TBODY</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>TF 1 - TBODY</td>
+                                    <td>TF 2 - TBODY</td>
+                                    <td>TF 3 - TBODY</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </code>
+                    <p><small>El color es para una representación visual por medio de css.</small></p>
+                </figure>
+                <p>Como se puede ver, como solo hay una etiqueta <em>col</em>, solo se selecciona la primera columna.</p>
+                <p>Vamos a suponer que queremos seleccionar la columna 3, como se menciona al comienzo de este artículo, tenemos el atributo <em>span</em> que nos permite seleccionar cuantas columnas necesitemos. Veamos un ejemplo de como usarlo para seleccionar la tercera columna.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Una de las formas de seleccionar la columna 3</figcaption>
+                    <img src="../assets/imgs/atributo-span-tablas.png" alt="Una forma de usar el atributo span en las tablas">
+                </figure>
+                <figure class="figure">
+                    <figcaption class="figcaption">Lo que muestra la imagen se representa así.</figcaption>
+                    <code>
+                        <table>
+                            <caption>Título</caption>
+                            <colgroup>
+                                <col span="2">
+                                <col class="emphasis">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>TH 1 - THEAD</th>
+                                    <th>TH 2 - THEAD</th>
+                                    <th>TH 3 - THEAD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >TD 1 - TBODY</td>
+                                    <td >TD 2 - TBODY</td>
+                                    <td >TD 3 - TBODY</td>
+                                </tr>
+                                <tr>
+                                    <td>TD 1 - TBODY</td>
+                                    <td>TD 2 - TBODY</td>
+                                    <td>TD 3 - TBODY</td>
+                                </tr>
+                                <tr>
+                                    <td>TD 1 - TBODY</td>
+                                    <td>TD 2 - TBODY</td>
+                                    <td>TD 3 - TBODY</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>TF 1 - TBODY</td>
+                                    <td>TF 2 - TBODY</td>
+                                    <td>TF 3 - TBODY</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </code>
+                </figure>
+                <p>Lo mismo sería si quisiéramos seleccionar las columnas 1 y 2, </p>
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./m_tablas-iii.html">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./m_tablas-iv.html">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
