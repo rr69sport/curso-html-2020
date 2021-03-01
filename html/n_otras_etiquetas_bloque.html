@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Tablas - Estructura básica</title>
+        <title>otras etiquetas de bloque</title>
         <meta charset="UTF-8" />
 
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -38,55 +38,55 @@
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./l_listas.html">Sección anterior</a>
+                        <a class="main-menu__link" href="./m_tablas-iv.html">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-ii.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./n_otras_etiquetas_de_linea.html">Siguiente sección</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <header>
-                <h1>Tablas - Parte I</h1>
-                <p>Las tablas en HTML sirven para mostrar contenido tabulado, por ejemplo los horarios de clases de una persona.</p>
+                <h1>Otras etiquetas de bloque.</h1>
             </header>
             <article class="article">
-                <h2>Estructura básica</h2>
+                <h2>Etiqueta address</h2>
                 <dl class="definition-list">
-                    <dt class="definition-list__def">table</dt>
-                    <dd class="definition-list__desc">Etiqueta que encierra una tabla.</dd>
-
-                    <dt class="definition-list__def">tr</dt>
-                    <dd class="definition-list__desc">table row, etiqueta que construye una fila.</dd>
-
-                    <dt class="definition-list__def">td</dt>
-                    <dd class="definition-list__desc">table data, etiqueta que construye una celda.</dd>
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;address&gt;&lt;/address&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para aportar información de contacto para el <span class="emphasis">article</span> más cercano o para todo el body.</dd>
                 </dl>
-                <p class="emphasis">Importante saber: el número de celdas de un <em>td</em> establecerá el número de columnas que tenga la tabla.</p>
-                <section>
-                    <h3>Forma de estructurar una tabla básica</h3>
-                    <figure class="figure">
-                        <figcaption class="figcaption">Estructura básica</figcaption>
-                        <img src="../assets/imgs/estructura-basica-tabla.png" alt="Estructura básica de una tabla">
-                    </figure>
-                    <figure class="figure">
-                        <figcaption class="figcaption">La estructura que muestra la imagen, el navegador la representa así:</figcaption>
-                        <table>
-                            <tr>
-                                <td>Celda 1 - Fila 1</td>
-                                <td>Celda 2 - Fila 1</td>
-                                <td>Celda 3 - Fila 1</td>
-                            </tr>
-                            <tr>
-                                <td>Celda 1 - Fila 2</td>
-                                <td>Celda 2 - Fila 2</td>
-                                <td>Celda 3 - Fila 2</td>
-                            </tr>
-                        </table>
-                    </figure>
-                    <p>Como puedes ver, la celda con el mismo número de cada fila conforman una columna.</p>
-                </section>
+                <figure class="figure">
+                    <figcaption class="figcaption">Etiqueta address</figcaption>
+                    <img src="../assets/imgs/address.png" alt="Ejemplo de uso de la etiqueta address">
+                </figure>
+            </article>
+            <article class="article">
+                <h2>Etiqueta blockquote</h2>
+                <dl class="definition-list">
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;blockquote&gt;&lt;/blockquote&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo <code>cite=""</code> para poner un enlace al documento original o fuente.</dd>
+                </dl>
+                <figure class="figure">
+                    <figcaption class="figcaption">Ejemplo de blockquote estricto</figcaption>
+                    <img src="../assets/imgs/blockquote.png" alt="Ejemplo de uso de la etiqueta blockquote">
+                </figure>
+                <blockquote class="blockquote" title="Extraído de la MDN" cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/blockquote">
+                    <p><strong>blockquote</strong> tiene un hermano menor, <code>&lt;q&gt;&lt;/q&gt;</code>. <em>Blockquote</em> sirve para citas en bloque, y <em>q</em> para citas en línea.</p>
+                    <p>A diferencia de <em>q</em>, <em>blockquote</em> no entrecomilla los contenidos, debe hacerlo el autor (con CSS).</p>
+                </blockquote>
+            </article>
+            <article class="article">
+                <h2>Etiqueta pre</h2>
+                
             </article>
         </main>
         <footer>
@@ -97,10 +97,10 @@
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./l_listas.html">Sección anterior</a>
+                        <a class="main-menu__link" href="./m_tablas-iv.html">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-ii.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./n_otras_etiquetas_de_linea.html">Siguiente sección</a>
                     </li>
                     <li class="main-menu__item main-menu__item--go-top">
                         <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>

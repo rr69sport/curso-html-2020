@@ -124,7 +124,8 @@ figure {
     margin-left: 0;
 }
 
-.blockuote {
+.blockquote {
+    width: 100%;
     margin-left: 0;
     padding: 0.15rem 1rem 0.15rem 2rem;
 
