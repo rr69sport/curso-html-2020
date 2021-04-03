@@ -51,114 +51,36 @@
     <main>
         <article class="article">
             <h1>Atributos</h1>
-
-            <p>
-                Los <em>atributos</em> son valores adicionales que
-                configuran los elementos y/o ajustan su comportamiento
-            </p>
-
+            <p>Los <em>atributos</em> son valores adicionales que configuran los elementos y/o ajustan su comportamiento.</p>
             <p>En términos generales hay dos tipos de atributos:</p>
-
             <dl class="definition-list">
                 <dt class="definition-list__def">Comunes</dt>
-                <dd class="definition-list__desc">
-                    Se declara el atributo y como string se le asigna un
-                    valor.
-                    <span class="emphasis"><code>atributo="valor"</code></span>
-                </dd>
+                <dd class="definition-list__desc">Se declara el atributo y como string se le asigna un valor, <span class="emphasis"><code>atributo="valor"</code></span></dd>
 
                 <dt class="definition-list__def">Booleanos *</dt>
-                <dd class="definition-list__desc">
-                    No tienen un valor declarado, solo se define el
-                    atributo.
-                    <span class="emphasis"><code>atributo</code></span>
-                </dd>
+                <dd class="definition-list__desc">No tienen un valor declarado, solo se define el atributo, <span class="emphasis"><code>atributo</code></span></dd>
             </dl>
-
-            <p>
-                * La peculiaridad de estos atributos es que no necesitan
-                definirse en <em>true</em> o <em>false</em>. Con existir en
-                la etiqueta a la que pertenecen como atributo ya son true, y
-                si no existen, son false. Un ejemplo de ello puede ser en un
-                campo de <a href="./m_formularios.html">formulario</a> el
-                cual es obligatorio rellenar, o en un video o archivo de
-                audio que tenga definido que esté muteado al cargar la
-                página.
-            </p>
-
+            <p>* La peculiaridad de estos atributos es que no necesitan definirse en <em>true</em> o <em>false</em>. Con existir en la etiqueta a la que pertenecen como atributo ya son true, y si no existen, son false. Un ejemplo de ello puede ser en un campo de <a href="./m_formularios.html">formulario</a> el cual es obligatorio rellenar, o en un video o archivo de audio que tenga definido que esté muteado al cargar la página.</p>
             <figure class="figure">
-                <figcaption class="figcaption">
-                    Ejemplo de un atributo booleano
-                </figcaption>
+                <figcaption class="figcaption">Ejemplo de un atributo booleano</figcaption>
                 <img src="../assets/imgs/atributo_booleanoo.png" alt="Forma de declarar un atributo booleano" />
             </figure>
-            <p>
-                Como muestra la imágen, el primer archivo de audio
-                <strong>no está muteado</strong>, ya que
-                <em>no tiene el atributo muted</em>. Lo contrario pasa con
-                el segundo archivo que <em>sí lo tiene</em>.
-            </p>
-
+            <p>Como muestra la imágen, el primer archivo de audio <strong>no está muteado</strong>, ya que <em>no tiene el atributo muted</em>. Lo contrario pasa con el segundo archivo que <em>sí lo tiene</em>.</p>
             <figure class="figure">
-                <figcaption class="figcaption">
-                    Ejemplo de un atributo de configuración
-                </figcaption>
+                <figcaption class="figcaption">Ejemplo de un atributo de configuración</figcaption>
                 <img src="../assets/imgs/atributo_configuracion.png" alt="Forma de declarar un atributo común" />
             </figure>
-            <p>
-                Como muestra el ejemplo, un atributo común o de
-                configuración en este caso, se define el atributo y después
-                del <span class="emphasis">=</span> se escribe entre
-                <span class="emphasis">comillas</span> el valor del
-                atributo. En este caso configura el lenguaje de nuestra
-                página.
-            </p>
-
+            <p>Como muestra el ejemplo, un atributo común o de configuración en este caso, se define el atributo y después del <span class="emphasis">=</span> se escribe entre <span class="emphasis">comillas</span> el valor del atributo. En este caso configura el lenguaje de nuestra página.</p>
             <figure class="figure">
-                <figcaption class="figcaption">
-                    Atributos globales
-                </figcaption>
-                <img src="../assets/imgs/atributos_globales.png"
-                    alt="Atributos globales o que están disponibles a casi todas las etiquetas HTML" />
+                <figcaption class="figcaption">Atributos globales</figcaption>
+                <img src="../assets/imgs/atributos_globales.png" alt="Atributos globales o que están disponibles a casi todas las etiquetas HTML" />
             </figure>
-            <p>
-                Los atributos globales son aquellos que están disponibles
-                para la mayoría de las etiquetas HTML. En la imágen se
-                muestran el atributo <em>class</em> que se usa para dar
-                estilos por
-                <a href="https://www.youtube.com/watch?v=d94wLkOpBoE&list=PLROIqh_5RZeAoysDfEpB_asxV0cItZOL_"
-                    target="_blank" title="Curso CSS 2018">CSS</a>, el atributo <em>id</em> que se usa para manipular el
-                elemento por
-                <a href="https://www.youtube.com/watch?v=tGtxX5x8pKU&list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG"
-                    title="Curso JavaScript 2019">JavaScript</a>
-                y como su nombre indica,
-                <strong>debe ser único en todo el documento</strong>, el
-                atributo <em>title</em> que cuando se pone el mouse encima
-                del elemento muestra un pequeño mensaje de ayuda.
-            </p>
-            <p>
-                El atributo <em>data-</em> es un atributo que sirve para
-                guardar algún dato que necesitemos en la etiqueta HTML, la
-                parte obligatoria de este atributo es
-                <strong>data-</strong> y lo que vaya después del guión puede
-                ser lo que nosotros queramos. A nivel de HTML como tal este
-                atributo no tiene ninguna relevancia notoria, su utilidad se
-                ve reflejada más bien a través de
-                <a href="https://www.youtube.com/watch?v=tGtxX5x8pKU&list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG"
-                    title="Curso JavaScript 2019">JavaScript</a>.
-            </p>
+            <p>Los atributos globales son aquellos que están disponibles para la mayoría de las etiquetas HTML. En la imágen se muestran el atributo <em>class</em> que se usa para dar estilos por <a href="https://www.youtube.com/watch?v=d94wLkOpBoE&list=PLROIqh_5RZeAoysDfEpB_asxV0cItZOL_" target="_blank" title="Curso CSS 2018">CSS</a>, el atributo <em>id</em> que se usa para manipular el elemento por <a href="https://www.youtube.com/watch?v=tGtxX5x8pKU&list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG" title="Curso JavaScript 2019">JavaScript</a> y como su nombre indica, <strong>debe ser único en todo el documento</strong>, el atributo <em>title</em> que cuando se pone el mouse encima del elemento muestra un pequeño mensaje de ayuda.</p>
+            <p>El atributo <em>data-</em> es un atributo que sirve para guardar algún dato que necesitemos en la etiqueta HTML, la parte obligatoria de este atributo es <strong>data-</strong> y lo que vaya después del guión puede ser lo que nosotros queramos. A nivel de HTML como tal este atributo no tiene ninguna relevancia notoria, su utilidad se ve reflejada más bien a través de <a href="https://www.youtube.com/watch?v=tGtxX5x8pKU&list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG" title="Curso JavaScript 2019">JavaScript</a>.</p>
         </article>
     </main>
     <footer>
-        <p>
-            El curso lo dicta
-            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
-                YouTube)</a>, y tiene la validación de la
-            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
-            la documentación brindada por la
-            <a target="_blank"
-                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
-        </p>
+        <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu__item">

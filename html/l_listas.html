@@ -51,131 +51,59 @@
     <main>
         <article class="article">
             <h1>Listas</h1>
-            <p>
-                Las listas en HTML sirven para listar contenido. En función
-                del tipo de contenido de nuestra lista, tenemos 3 tipos de
-                listas.
-            </p>
+            <p>Las listas en HTML sirven para listar contenido. En función del tipo de contenido de nuestra lista, tenemos 3 tipos de listas.</p>
             <dl id="dd" class="definition-list definition-list--full-description">
                 <!-- UL -->
                 <dt class="definition-list__def">ul</dt>
                 <dd class="definition-list__desc">Unordered List:</dd>
-                <dd class="definition-list__desc">
-                    Utiliza cuando el orden de los elementos no influye, por
-                    ejemplo la lista d compras, da igual si el pan está
-                    antes que la leche o viceversa.
-                </dd>
+                <dd class="definition-list__desc">Utiliza cuando el orden de los elementos no influye, por ejemplo la lista d compras, da igual si el pan está antes que la leche o viceversa.</dd>
 
                 <!-- OL -->
                 <dt class="definition-list__def">ol</dt>
                 <dd class="definition-list__desc">Ordered List:</dd>
-                <dd class="definition-list__desc">
-                    Este tipo de lista sí importa el orden, por ejemplo la
-                    lista de posiciones de los ganadores de un concurso.
-                </dd>
+                <dd class="definition-list__desc">Este tipo de lista sí importa el orden, por ejemplo la lista de posiciones de los ganadores de un concurso.</dd>
 
                 <!-- DL -->
                 <dt class="definition-list__def">dl</dt>
                 <dd class="definition-list__desc">Definition List:</dd>
-                <dd class="definition-list__desc">
-                    Utiliza para hacer una lista de definiciones, un
-                    diccionario por ejemplo.
-                </dd>
+                <dd class="definition-list__desc">Utiliza para hacer una lista de definiciones, un diccionario por ejemplo.</dd>
             </dl>
             <section>
                 <h2>Unordered List y Ordered List</h2>
-                <p>
-                    Semánticamente son diferentes, y el navegador no
-                    interpreta lo mismo si pones una lista <em>UL</em> que
-                    una lista <em>OL</em>. Sin embargo, tienen en común el
-                    elemento hijo que es el elemento de lista, y se llama
-                    <strong>LI</strong>, representado en código HTML de la
-                    siguiente forma <code>&lt;li&gt;&lt;/li&gt;</code>. Son
-                    elementos de bloque, pueden contener, tanto texto plano
-                    como etiquetas de línea como otras etiquetas de bloque
-                    incluídas otros OL o UL.
-                </p>
+                <p>Semánticamente son diferentes, y el navegador no interpreta lo mismo si pones una lista <em>UL</em> que una lista <em>OL</em>. Sin embargo, tienen en común el elemento hijo que es el elemento de lista, y se llama <strong>LI</strong>, representado en código HTML de la siguiente forma <code>&lt;li&gt;&lt;/li&gt;</code>. Son elementos de bloque, pueden contener, tanto texto plano como etiquetas de línea como otras etiquetas de bloque incluídas otros OL o UL.</p>
             </section>
             <section>
                 <h2>Definition List</h2>
-                <p>
-                    Para crear una lista de definición se usan las etiquetas
-                    <code>&lt;dl&gt;&lt;/dl&gt;</code> de apertura y cierre
-                    respectivamente, que significan
-                    <em>definition list</em>. Y dentro, para declarar el
-                    término a definir, se usa las etiquetas
-                    <code>&lt;dt&gt;&lt;/dt&gt;</code> que significan
-                    <em>definition term</em>, de igual forma para declarar
-                    la descripción de ese término se utilizan las etiquetas
-                    <code>&lt;dd&gt;&lt;/dd&gt;</code> que significa
-                    <em>definition description</em>.
-                </p>
-                <p>
-                    Como curiosidad, por cada término solo debe ir una
-                    etiqueta <code>dt</code>, pero puede ese mismo término
-                    tener más una definción, como muestra
-                    <!-- para móbiles -->
-                    <a href="#dd">más arriba</a>
-                    lo que significa cada tipo de lista. Por último, cabe
-                    resaltar que no tienen ninguna etiqueta que separe los
-                    términos entre si, solo se escribe el término con su
-                    definición y debajo el siguiente término con su
-                    respectiva definición.
-                </p>
+                <p>Para crear una lista de definición se usan las etiquetas <code>&lt;dl&gt;&lt;/dl&gt;</code> de apertura y cierre respectivamente, que significan <em>definition list</em>. Y dentro, para declarar el término a definir, se usa las etiquetas <code>&lt;dt&gt;&lt;/dt&gt;</code> que significan <em>definition term</em>, de igual forma para declarar la descripción de ese término se utilizan las etiquetas <code>&lt;dd&gt;&lt;/dd&gt;</code> que significa <em>definition description</em>.</p>
+                <p>Como curiosidad, por cada término solo debe ir una etiqueta <code>dt</code>, pero puede ese mismo término tener más una definción, como muestra <a href="#dd">más arriba <!-- para móbiles --></a>lo que significa cada tipo de lista. Por último, cabe resaltar que no tienen ninguna etiqueta que separe los términos entre si, solo se escribe el término con su definición y debajo el siguiente término con su respectiva definición.</p>
             </section>
             <section>
                 <h2><a href="./i_atributos.html">Atributos</a> de las listas</h2>
-                <p>
-                    Las UL y las OL, tienen cada una un par de <a href="./i_atributos.html">atributos</a> que
-                    es probable que en algún momento necesites que tengan
-                    unas especificaciones concretas.
-                </p>
-                <p>
-                    Para las OL tenemos los <a href="./i_atributos.html">atributos</a> <code>type</code> y
-                    <code>start</code>. El <a href="./i_atributos.html">atributo</a> se le asigna a la
-                    etiqueta OL o a la etiqueta UL según el caso.
-                </p>
+                <p>Las UL y las OL, tienen cada una un par de <a href="./i_atributos.html">atributos</a> que es probable que en algún momento necesites que tengan unas especificaciones concretas.</p>
+                <p>Para las OL tenemos los <a href="./i_atributos.html">atributos</a> <code>type</code> y <code>start</code>. El <a href="./i_atributos.html">atributo</a> se le asigna a la etiqueta OL o a la etiqueta UL según el caso.</p>
                 <h3>Para OL</h3>
                 <dl class="definition-list">
                     <dt class="definition-list__def">
                         <code>type</code>
                     </dt>
-                    <dd class="definition-list__desc">
-                        Es para darle estilos a la numeración. Los posibles
-                        valores son: 1, A, a, I, i. Los valores <em>I</em> e <em>i</em> es en representación de los números romanos.
-                    </dd>
+                    <dd class="definition-list__desc">Es para darle estilos a la numeración. Los posibles valores son: 1, A, a, I, i. Los valores <em>I</em> e <em>i</em> es en representación de los números romanos.</dd>
                     <dt class="definition-list__def">
                         <code>start</code>
                     </dt>
-                    <dd class="definition-list__desc">
-                        Es para darle inicio a la secuencia, debe ser un
-                        número entero. Por ejemplo si tenemos el <code>type="a"</code> y tenemos declarado <code>start="5"</code>, pues empezará a contar desde la letra <span class="emphasis">e</span>, y lo mismo para los otros valores que tenga <code>type</code>
-                    </dd>
+                    <dd class="definition-list__desc">Es para darle inicio a la secuencia, debe ser un número entero. Por ejemplo si tenemos el <code>type="a"</code> y tenemos declarado <code>start="5"</code>, pues empezará a contar desde la letra <span class="emphasis">e</span>, y lo mismo para los otros valores que tenga <code>type</code>.</dd>
                 </dl>
                 <h3>Para UL</h3>
                 <dl class="definition-list">
                     <dt class="definition-list__def">
                         <code>type</code>
                     </dt>
-                    <dd class="definition-list__desc">
-                        Para darle estilos a los items de la lista. Posibles
-                        valores que tiene son:
-                        <em>dics, square, circle</em>.
-                    </dd>
+                    <dd class="definition-list__desc">Para darle estilos a los items de la lista. Posibles valores que tiene son: <em>dics, square, circle</em>.</dd>
                 </dl>
             </section>
         </article>
     </main>
     <footer>
-        <p>
-            El curso lo dicta
-            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
-                YouTube)</a>, y tiene la validación de la
-            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
-            la documentación brindada por la
-            <a target="_blank"
-                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
-        </p>
+        <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu__item">

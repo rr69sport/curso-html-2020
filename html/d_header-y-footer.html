@@ -58,80 +58,39 @@
         </header>
         <section>
             <h2>¿Cuáles son éstas etiquetas?</h2>
-            <p>
-                Estas etiquetas son:
-                <em><a href="./c_etiqueta-main.html">main</a></em>, <em>article, section, header, footer, aside y
-                    nav</em>
-            </p>
+            <p>Estas etiquetas son: <em><a href="./c_etiqueta-main.html">main</a></em>, <em><a href="./e_article-y-section.html">article, section</a>, <a href="#header">header</a>, <a href="#footer">footer</a>, <a href="./f_aside.html">aside</a> y nav</em>.</p>
         </section>
         <section>
             <h2>¿Qué son estas etiquetas?</h2>
-            <p>
-                Son etiquetas de bloque, que a nivel semántico tienen un
-                significado específico. Tienen una definicón explícita sobre
-                el contenido que agrupan.
-            </p>
+            <p>Son etiquetas de bloque, que a nivel semántico tienen un significado específico. Tienen una definicón explícita sobre el contenido que agrupan.</p>
             <section>
                 <h3>Header y Footer</h3>
-                <p>
-                    A nivel de descendientes directos de body, solo puede
-                    haber
-                    <strong>una etiqueta header y una etiqueta footer como hijo
-                        directo</strong>. Y ninguna de las 2 debe anidar una etiqueta del mismo
-                    nombre, por ejemplo: un header <strong>no</strong> puede
-                    ser hijo de otro header.
-                </p>
+                <p>A nivel de descendientes directos de body, solo puede haber <strong>una etiqueta header y una etiqueta footer como hijo directo</strong>. Y ninguna de las 2 debe anidar una etiqueta del mismo nombre, por ejemplo: un header <strong>no</strong> puede ser hijo de otro header.</p>
             </section>
         </section>
-
         <article class="article">
-            <header>
+            <header id="header">
                 <h2>Header</h2>
             </header>
-            <p>
-                Puede contener algunos elementos de encabezado, así como
-                también un logo, un formulario de búsqueda, un nombre de
-                autor y otros componentes como redes sociales o menú de
-                navegación.
-            </p>
+            <p>Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes como redes sociales o menú de navegación.</p>
             <figure class="figure">
-                <figcaption class="figcaption">
-                    Ejemplo de uso semántico de la etiqueta <em>header</em>
-                </figcaption>
+                <figcaption class="figcaption">Ejemplo de uso semántico de la etiqueta <em>header</em></figcaption>
                 <img src="../assets/imgs/header.png" alt="Uso semántico de la etiqueta header" />
             </figure>
         </article>
-
         <article class="article">
-            <header>
+            <header id="footer">
                 <h2>Footer</h2>
             </header>
-            <p>
-                Representa un pie de página para el contenido de sección más
-                cercano o el elemento del que desciende, por ejemplo:
-                <em>article, aside, section, blockquote, details, fieldset,
-                    figure, td</em>. Un pie de página típicamente contiene información acerca
-                de el autor de la sección, datos de derechos de autor o
-                enlaces a documentos relacionados.
-            </p>
+            <p>Representa un pie de página para el contenido de sección más cercano o el elemento del que desciende, por ejemplo: <em><a href="./e_article-y-section.html">article, section</a>, <a href="./f_aside.html">aside</a>, blockquote, details, fieldset, figure, td</em>. Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
             <figure class="figure">
-                <figcaption class="figcaption">
-                    Ejemplo de uso semántico de la etiqueta <em>footer</em>
-                </figcaption>
+                <figcaption class="figcaption">Ejemplo de uso semántico de la etiqueta <em>footer</em></figcaption>
                 <img src="../assets/imgs/footer.png" alt="Uso semántico de la etiqueta footer" />
             </figure>
         </article>
     </main>
     <footer class="footer">
-        <p>
-            El curso lo dicta
-            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
-                YouTube)</a>, y tiene la validación de la
-            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
-            la documentación brindada por la
-            <a target="_blank"
-                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
-        </p>
+        <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu__item">
