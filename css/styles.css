@@ -13,7 +13,6 @@ html {
 }
 body {
     margin: 0;
-    font-size: 18px;
     font-family: "Corbel", sans-serif;
 }
 h1,
@@ -40,9 +39,6 @@ ul {
 }
 figure {
     margin: 0;
-}
-:target {
-    outline: 2px solid #141414;
 }
 
 .body {
@@ -139,7 +135,7 @@ figure {
 }
 
 @media screen and (min-width: 650px) {
-    html {
+    .body {
         font-size: 18px;
     }
 
