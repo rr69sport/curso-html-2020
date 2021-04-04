@@ -38,10 +38,10 @@
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-i.html">Sección anterior</a>
+                        <a class="main-menu__link" href="./m_tablas-i.html" title="Sección Tablas del curso (primera parte)">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-iii.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./m_tablas-iii.html" title="Sección Tablas del curso (tercera parte)">Siguiente sección</a>
                     </li>
                 </ul>
             </nav>
@@ -54,59 +54,59 @@
                 <h2>La estructura completa</h2>
                 <p>Además de las etiquetas que ya vimos de una estructura básica, para una mejor semántica una tabla también se compone de las siguientes etiquetas.</p>
 
-                <p>Los títulos de las tablas se establecen con la etiqueta <strong>caption</strong>, y según la <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTMLElemento/caption">especificación</a>, esa etiqueta se coloca justo después de la etiqueta de apertura de la tabla.</p>
+                <p>Los títulos de las tablas se establecen con la etiqueta <code>caption</code>, y según la <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTMLElemento/caption" title="Documentación Oficial sobre la etiqueta CAPTION de la MDN">especificación</a>, <em>esa etiqueta se coloca justo después de la etiqueta de apertura de la tabla</em>.</p>
 
-                <p>Las cabeceras de las tablas se establecen cona etiqueta <strong>thead</strong>. Dentro tendremos una etiqueta <em>tr</em> normal, pero en el caso de las celdas, lasestableceremos con la etiqueta <em>th</em> en lugar de la etiqueta <em>td</em>. La etiqueta <em>thead</em> suele ir inmediatamente después de la etiqueta <em>table</em>si no existe una etiqueta <em>caption</em>, o enseguida de esta última si es que existe.</p>
+                <p>Las cabeceras de las tablas se establecen con la etiqueta <code>thead</code>. Dentro tendremos una etiqueta <a href="./m_tablas-i.html#tables" title="Etiqueta TR (Tablas primera parte)"><code>tr</code></a> normal, pero en el caso de las celdas, las estableceremos con la etiqueta <code>th</code> en lugar de la etiqueta <a href="./m_tablas-i.html#tables" title="Etiqueta TD (Tablas primera parte)"><code>td</code></a>. La etiqueta <code>thead</code> suele ir inmediatamente después de la etiqueta <code>table</code> si no existe una etiqueta <code>caption</code>, o enseguida de esta última si es que existe.</p>
 
-                <p>Para el contenido de la tabla se usa la etiqueta <strong>tbody</strong> que representa el cuerpo de la tabla.</p>
+                <p>Para el contenido de la tabla se usa la etiqueta <code>tbody</code> que representa el cuerpo de la tabla.</p>
 
-                <p>De forma opcional podemos colocar una etiqueta <strong>tfoot</strong> para establecer un pie de tabla. Un ejemplo donde suele usarse es en una tabla donde al final dela tabla se suman los resultados que contiene dicha tabla.</p>
+                <p>De forma opcional podemos colocar una etiqueta <code>tfoot</code> para establecer un pie de tabla. Un ejemplo donde suele usarse es en una tabla donde al final dela tabla se suman los resultados que contiene dicha tabla.</p>
                 <figure class="figure">
                     <figcaption class="figcaption">Estructura completa</figcaption>
                     <img src="../assets/imgs/estructura-completa-tabla.png" alt="Estructura completa de una tabla">
                 </figure>
                 <figure class="figure">
                     <figcaption class="figcaption">La estructura representada en la imagen, el navegador la muestra así:</figcaption>
-                    <table>
+                    <table class="table-code">
                         <caption>Título</caption>
                         <!-- Se establece la cabecera -->
                         <thead>
                             <tr>
-                                <th>TH 1 - THEAD</th>
-                                <th>TH 2 - THEAD</th>
+                                <th class="th">TH 1 - THEAD</th>
+                                <th class="th">TH 2 - THEAD</th>
                             </tr>
                         </thead>
                         <!-- Se establece el cuerpo -->
                         <tbody>
                             <tr>
-                                <td>TD 1 - TBODY</td>
-                                <td>TD 2 - TBODY</td>
+                                <td class="td">TD 1 - TBODY</td>
+                                <td class="td">TD 2 - TBODY</td>
                             </tr>
                         </tbody>
                         <!-- Se establece el footer -->
                         <tfoot>
                             <tr>
-                                <td>TD 1 - TFOOT</td>
-                                <td>TD 2 - TFOOT</td>
+                                <td class="td">TD 1 - TFOOT</td>
+                                <td class="td">TD 2 - TFOOT</td>
                             </tr>
                         </tfoot>
                     </table>
                 </figure>
-                <p class="emphasis">Si se establece un <em>thead</em> en la tabla, de forma obligatoria, el contenido debe ir contenido en la etiqueta <em>tbody</em>.</p>
+                <p><strong>Si se establece un <code>thead</code> en la tabla, de forma obligatoria, el contenido debe ir contenido en la etiqueta <code>tbody</code></strong>.</p>
             </article>
         </main>
         <footer>
-            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
             <nav>
                 <ul class="main-menu">
                     <li class="main-menu__item">
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-i.html">Sección anterior</a>
+                        <a class="main-menu__link" href="./m_tablas-i.html" title="Sección Tablas del curso (primera parte)">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-iii.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./m_tablas-iii.html" title="Sección Tablas del curso (tercera parte)">Siguiente sección</a>
                     </li>
                     <li class="main-menu__item main-menu__item--go-top">
                         <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>

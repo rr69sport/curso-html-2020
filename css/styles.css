@@ -130,6 +130,14 @@ figure {
     border-left: 5px solid;
 }
 
+.table-code {
+    font-family: monospace;
+}
+.th, .td {
+    padding: .25em .5em;
+    border: 1px solid #aaa;
+}
+
 .footer {
     margin-top: auto;
 }

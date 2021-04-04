@@ -40,10 +40,10 @@
                     <a class="main-menu__link" href="../">Inicio</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./a_sintaxis.html">Sección anterior</a>
+                    <a class="main-menu__link" href="./a_sintaxis.html" title="Sección Sintaxis de Etiquetas y Nombrar Archivos del curso">Sección anterior</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./b_encabezados.html">Siguiente sección</a>
+                    <a class="main-menu__link" href="./b_encabezados.html" title="Sección Encabezados del curso">Siguiente sección</a>
                 </li>
             </ul>
         </nav>
@@ -51,26 +51,50 @@
     <main>
         <article class="article">
             <header>
-                <h1>Estructura HTML de una página web</h1>
+                <h1>Estructura HTML básica de una página web</h1>
             </header>
-            <figure class="figure">
-                <figcaption class="figcaption">Estructura básica de un documento <em>HTML</em></figcaption>
+            <figure id="structure-basic" class="figure">
+                <figcaption class="figcaption">Estructura básica de un documento HTML</figcaption>
                 <img src="../assets/imgs/estructura.png" alt="Estructura básica de un docuemnto HTML" />
             </figure>
+            <p>Como vemos en la imagen, hay varias etiquetas importantes. Veamos qué significan.</p>
+            <section>
+                <h2>Etiqueta <code>&lt;!DOCTYPE html&gt;</code></h2>
+                <p>Esta etiqueta establece el tipo de estandar del documento HTML (HTML5).</p>
+                <p>Antes de HTML5 habían varios estándares que los programadores debían establecer en cada documento HTML. Con la salida de HTML5 eso cambió y hoy día solo se usa <code>&lt;!DOCTYPE html&gt;</code>. <strong>Debe ser única por cada documento HTML</strong>.</p>
+            </section>
+            <section>
+                <h2>Etiqueta <code>&lt;html&gt;</code></h2>
+                <p>Esta etiqueta es la que engloba el resto de etiquetas del documento, debe ser única por cada documento y sus hijos directos solo pueden ser <a href="#head-tag" title="Etiqueta HEAD"><code>&lt;head&gt;</code></a> y <a href="#body-tag" title="Etiqueta BODY"><code>&lt;body&gt;</code></a>.</p>
+                <p>Leer sobre el atributo <a href="./i_atributos.html#lang-attributte" title="Atributo LANG">lang</a>.</p>
+            </section>
+            <section id="head-tag">
+                <h2>Etiqueta <code>&lt;head&gt;</code></h2>
+                <p>La etiqueta <code>&lt;head&gt;</code> es una etiqueta que se utiliza para darle información de nuestro sitio web al navegador más que al usuario. De lo que hay dentro de esta etiqueta el usuario no tiene conocimiento. Pero el navegador y los motores de búsqueda es donde se fijan cuando buscamos algún resultado en internet.</p>
+                <p>Por ejemplo, la información que aparece cuando hacemos una búsqueda y Google nos muestra los <a href="./j_enlaces.html" title="Sección Enlaces del curso">links</a> con una pequeña descripción o cuando compartimos un <a href="./j_enlaces.html" title="Sección Enlaces del curso">enlace</a> en nuestras redes sociales, esa información que se muestra, los motores de búsqueda la adquieren de lo que contiene esta etiqueta <code>&lt;head&gt;</code>. <strong>También debe ser única por cada documento HTML</strong>.</p>
+            </section>
+            <section id="body-tag">
+                <h2>Etiqueta <code>&lt;body&gt;</code></h2>
+                <p>Contrario a la etiqueta head, lo que está en <code>&lt;body&gt;</code> <em>sí se muestra al usuario</em>, todo lo que trata nuestro sitio web va dentro de esta etiqueta. <strong><code>&lt;body&gt;</code> también debe ser única por cada documento HTML</strong>.</p>
+            </section>
+            <section>
+                <h2>Etiqueta <code>&lt;meta&gt;</code></h2>
+                <p>Esta etiqueta específicamente con el <a href="./i_atributos.html" title="Sección atributos del curso">atributo</a> <code>charset</code>, le indica al navegador el <em>set de caractéres latinos</em>. Si no lo declaramos, el navegador mostrará símbolos extraños en letras como la <em>ñ</em> o palabras con tildes, ya que al no existir en el idioma inglés, por defecto no los reconoce. Va de la mano con el <a href="./i_atributos.html" title="Sección atributos del curso">atributo</a> <a href="./i_atributos.html#lang-attribute" title="Atributo LANG">lang</a> declarado en <code>lang="es"</code> como en la <a href="#structure-basic" title="Imagen mostrada un poco más arriba">imagen</a>, también por defecto está declarado en <code>lang="en"</code> de <em>english</em>.</p>
+            </section>
         </article>
     </main>
     <footer class="footer">
-        <p>El curso lo dicta<a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+        <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="../">Inicio</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./a_sintaxis.html">Sección anterior</a>
+                    <a class="main-menu__link" href="./a_sintaxis.html" title="Sección Sintaxis de Etiquetas y Nombrar Archivos del curso">Sección anterior</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./b_encabezados.html">Siguiente sección</a>
+                    <a class="main-menu__link" href="./b_encabezados.html" title="Sección Encabezados del curso">Siguiente sección</a>
                 </li>
                 <li class="main-menu__item main-menu__item--go-top">
                     <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
