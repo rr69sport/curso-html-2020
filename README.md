@@ -8,7 +8,7 @@
 
 **1991** Se lanza la web
 
-* La web es no es lo mismo que internet. La web es el conjunto de documentos que tenemos disponibles.Documentos es cualquier página web o sitio web. Internet por otro lado es la infraestructura que nos permite ver esos archivos, llámese ordenadores, routers, antenas, etc.
+* La web no es lo mismo que internet. La web es el conjunto de documentos que tenemos disponibles. Documentos es cualquier página web o sitio web. Internet por otro lado es la infraestructura que nos permite ver esos archivos, llámese ordenadores, routers, antenas, etc.
 
 **Se basa en 3 conceptos:**
 
