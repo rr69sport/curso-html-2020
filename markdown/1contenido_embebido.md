@@ -33,6 +33,7 @@ Este formato admite tanto transparencias como animación, es decir jpg, png y gi
 
 Hay algunos navegadores antiguos que no soportan webp. En estos casos es recomendable hacer un **fallback**, que es decirle al navegador, *"usa esta imagen en formato webp y si no la entiendes usa ésta otra, en jpg, gif o png según haga falta"*. 
 
+
 ---
 ![youtube logo](assets/logos/youtube_logo_30.png)   [¿Qué es el contenido embebido?](https://youtu.be/1wQIu0Jar5M)
 
