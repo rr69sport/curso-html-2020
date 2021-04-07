@@ -1,6 +1,5 @@
 ![portada del curso](assets/imgs/portada.jpg)
 
-
 # Curso de HTML 2020 / 2021
 
 ## Contenido
@@ -19,7 +18,7 @@
 - Enlaces
 - Rutas
 - Listas
-- Tablas i 
+- Tablas i
 - Tablas ii
 - Tablas iii
 - Tablas iv
