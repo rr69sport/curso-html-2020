@@ -13,7 +13,6 @@ html {
 }
 body {
     margin: 0;
-    font-size: 18px;
     font-family: "Corbel", sans-serif;
 }
 h1,
@@ -40,9 +39,6 @@ ul {
 }
 figure {
     margin: 0;
-}
-:target {
-    outline: 2px solid #141414;
 }
 
 .body {
@@ -134,12 +130,20 @@ figure {
     border-left: 5px solid;
 }
 
+.table-code {
+    font-family: monospace;
+}
+.th, .td {
+    padding: .25em .5em;
+    border: 1px solid #aaa;
+}
+
 .footer {
     margin-top: auto;
 }
 
 @media screen and (min-width: 650px) {
-    html {
+    .body {
         font-size: 18px;
     }
 
