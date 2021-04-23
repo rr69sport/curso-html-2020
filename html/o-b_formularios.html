@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Otras etiquetas de línea</title>
+        <title>Formularios - Unir un label a un input</title>
         <meta charset="UTF-8" />
 
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -25,8 +25,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
 
-       <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-       <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
 
         <link rel="stylesheet" href="../css/styles.css" />
     </head>
@@ -38,18 +38,32 @@
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./n_otras_etiquetas_bloque.html" title="Sección Otras Etiquetas de Bloque del curso">Sección anterior</a>
+                        <a class="main-menu__link" href="./o-a_formularios.html" title="Sección formularios del curso (parte uno)">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./o-a_formularios.html" title="Sección Formularios del curso (parte uno)">Siguiente sección</a>
+                        <a class="main-menu__link" href="./o-c_formularios.html" title="Sección Formularios del curso (parte tres)">Siguiente sección</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Otras etiquetas de línea</h1>
             <article class="article">
-                <p>FALTA</p>
+                <h1>Como unir un <code>&lt;label&gt;</code> a un &lt;input&gt;</h1>
+                <p>Como dice la descripción de <code>&lt;label&gt;</code> en la <a href="./o-a_formularios.html">sección anterior</a>, un label con el atributo <code>for=""</code>, debe estar asociado a un &lt;input&gt; con un <code>id=""</code> con el mismo valor que el atributo <code>for=""</code> de la etiqueta <code>&lt;label&gt;</code>.</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">Como asociar un label a un input</figcaption>
+                    <img src="../assets/imgs/formularios/asociar_label_a_input.png" alt="Como asociar un input a un label con el atributo for">
+                </figure>
+
+                <p>Es importante saber, que al estar asociadas las dos etiquetas, tanto si hacemos click en el input como en el label, el cursor quedará en el input listo para empezar a escribir.</p>
+
+                <p>Existe otra forma de asociar un input a un label aunque no es tan común verla porque no permite jugar tanto con los elementos por medio de CSS, pero es totalmente válida y la <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/label#ejemplos" title="Documentación de la MDN sobre label">especificación</a> dice que es correcta también. Esa otra forma es englobar en el label al input, omitiendo así el uso del atributo <code>for=""</code> en el label.</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">Otra forma de asociar un input a un label</figcaption>
+                    <img src="../assets/imgs/formularios/englobar_input_con_label.png" alt="Englobar un input en un label">
+                </figure>
             </article>
         </main>
         <footer>
@@ -60,10 +74,10 @@
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./n_otras_etiquetas_bloque.html" title="Sección Otras Etiquetas de Bloque del curso">Sección anterior</a>
+                        <a class="main-menu__link" href="./o-a_formularios.html" title="Sección formularios del curso (parte uno)">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./o-a_formularios.html" title="Sección Formularios del curso (parte uno)">Siguiente sección</a>
+                        <a class="main-menu__link" href="./o-c_formularios.html" title="Sección Formularios del curso (parte tres)">Siguiente sección</a>
                     </li>
                     <li class="main-menu__item main-menu__item--go-top">
                         <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
