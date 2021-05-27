@@ -13,7 +13,6 @@ html {
 }
 body {
     margin: 0;
-    font-size: 18px;
     font-family: "Corbel", sans-serif;
 }
 h1,
@@ -32,17 +31,8 @@ img {
     max-width: 100%;
     height: auto;
 }
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
 figure {
     margin: 0;
-}
-:target {
-    outline: 2px solid #141414;
 }
 
 .body {
@@ -92,6 +82,7 @@ figure {
     flex-direction: column;
     align-items: center;
 
+    margin-top: 3rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 
@@ -112,6 +103,9 @@ figure {
 }
 .definition-list--full-description {
     grid-template-columns: auto auto 2fr;
+}
+.definition-list--column {
+    grid-template-columns: 1fr;
 }
 .definition-list__def,
 .definition-list__desc {
@@ -134,12 +128,20 @@ figure {
     border-left: 5px solid;
 }
 
+.table-code {
+    font-family: monospace;
+}
+.th, .td {
+    padding: .25em .5em;
+    border: 1px solid #aaa;
+}
+
 .footer {
     margin-top: auto;
 }
 
 @media screen and (min-width: 650px) {
-    html {
+    .body {
         font-size: 18px;
     }
 
@@ -167,4 +169,26 @@ figure {
 }
 .important {
     font-weight: 900;
+}
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.font-small {
+    font-size: 75%;
+}
+.small-image {
+    max-width: 400px;
+}
+.no-margin-top {
+    margin-top: 0;
+}
+.margin-left {
+    margin-left: 1.5rem;
+}
+.flex {
+    display: flex;
+}
+.flex-auto {
+    flex: 1 1 0;
 }

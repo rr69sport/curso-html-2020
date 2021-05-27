@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios - Etiqueta Select</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-g_formularios.html" title="Sección Formularios del curso (parte siete)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-i_formularios.html" title="Sección Formularios del curso (parte nueve)">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Etiqueta select</h1>
+            </header>
+            <article id="select" class="article">
+                <h2>Select básico</h2>
+                <p>La etiqueta <code>&lt;select&gt;&lt;/select&gt;</code> crea una lista de opciones donde podemos elegir una o varias opciones. No es un input como tal pero es una mezcla entre los inputs de <a href="./o-g_formularios.html#type-radio" title="Inputs de tipo radio">tipo radio</a> y los de <a href="./o-g_formularios.html#type-checkbox" title="Inputs de tipo checkbox"> tipo checkbox</a>.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>&lt;select&gt;&lt;/select&gt;</code> 
+                        con etiquetas 
+                        <code>&lt;option&gt;&lt;/option&gt;</code>
+                        dentro
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/select-code.png" alt="Etiqueta select (Código HTML)">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">Representación en el navegador del código de la imagen anterior</figcaption>
+                    <img src="../assets/imgs/formularios/select-2.png" alt="Etiqueta select">
+                </figure>
+                <p>Las opciones desplegadas aparecen cuando se da click en la flechita del recuadro marcado en rojo. El atributo <code>value=""</code> va designado en cada <span class="emphasis">option</span> y el atributo <span class="emphasis">name</span> va designado en la etiqueta <span class="emphasis">select</span> siendo ambos obligatorios porque es el valor que lee el backend cuando se envía el formulario, igual que en los inputs de tipo <a href="./o-g_formularios.html#type-radio" title="Inputs de tipo radio">tipo radio</a> y los de <a href="./o-g_formularios.html#type-checkbox" title="Inputs de tipo checkbox"> tipo checkbox</a>,.</p>
+                <p>Por último, para poder seleccionar más de una opción se debe asignar a la etiqueta selecet el atributo booleano <code>multiple</code>, que en ese caso pasa a ser una lista desplegable, lo que muestra es una lista con una barra de scroll.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">Representación de una lista de opciones múltiples</figcaption>
+                    <img src="../assets/imgs/formularios/select-multiple.png" alt="Etiqueta select">
+                </figure>
+                <p>Para poder seleccionar más de una opción, manteniendo presionada la tecla <code>Ctrl</code> en el teclado, clickeamos sobre las opciones que deseamos elegir.</p>
+            </article>
+            <article class="article">
+                <h2>Select categorías múltiples</h2>
+                <p>La etiqueta select, como vimos, es una lista de opciones que se relacionan entre sí, pero a veces es necesario clasificar en distintos grupos esas opciones. Por ejemplo tenemos una lista de países de distintos continentes, para poder agrupar por categoría las opciones, existe la etiqueta <code>&lt;optgroup&gt;&lt;/optgroup&gt;</code> y nombrar la categoría con el atributo <code>label=""</code>.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Código de la etiqueta <code>&lt;optgroup&gt;&lt;/optgroup&gt;</code></figcaption>
+                    <img src="../assets/imgs/formularios/select-optgroup.png" alt="Etiqueta optgroup (código HTML)">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">En el navegador se vería así</figcaption>
+                    <img src="../assets/imgs/formularios/select-optgroup-2.png" alt="Etiqueta optgroup (código HTML)">
+                </figure>
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-g_formularios.html" title="Sección Formularios del curso (parte siete)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-i_formularios.html" title="Sección Formularios del curso (parte nueve)">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

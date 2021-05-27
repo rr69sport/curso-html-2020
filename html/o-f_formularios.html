@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios - Inputs de tipo variado</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-e_formularios.html" title="Sección Formularios del curso (parte cinco)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-g_formularios.html" title="Sección Formularios del curso (parte siete)">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Otros tipos de inputs</h1>
+            </header>
+            <article class="article">
+                <h2>Input de tipo color</h2>
+                    <figure class="figure no-margin-top">
+                        <figcaption class="figcaption">
+                            <code>
+                                &lt;input type="color" /&gt;
+                            </code>
+                        </figcaption>
+                        <img class="small-image" src="../assets/imgs/formularios/type-color.png" alt="Input de tipo color">
+                    </figure>
+                    <p>Este input lo que nos permite es seleccionar un color en distintos formatos. Si presionamos en la flechita marcada en rojo, cambia entre formatos para poder elegir el que deseemos.</p>
+                    <p>Los formatos son:</p>
+                    <ul class="font-small">
+                        <li>RGB - (Red Green Blue)</li>
+                        <li>HSL - (del inglés Hue, Saturation, Lightness – Matiz, Saturación, Luminosidad)</li>
+                        <li>HEX - (Hexadecimal)
+                        </li>
+                    </ul>
+                    <p>Una posible utilidad de este input, es cuando queremos que el usuario pueda elegir el color de texto o de fondo o el color primario de nuestra web o aplicación.</p>
+            </article>
+            <article class="article">
+                <h2>Input de tipo número</h2>
+                    <figure class="figure no-margin-top">
+                        <figcaption class="figcaption">
+                            <code>
+                                &lt;input type="number" /&gt;
+                            </code>
+                        </figcaption>
+                        <img src="../assets/imgs/formularios/type-number.png" alt="Input de tipo number">
+                    </figure>
+                    <p>Este input como su nombre indica es para ingresar números (no permite escribir texto). Tiene las flechitas para subir y bajar que al pulsarlas aumentan o disminuyen el número ingresado en uno. También puede escribirse un número que nosotros queramos.</p>
+            </article>
+            <article class="article">
+                <h2>Input de tipo rango</h2>
+                    <figure class="figure no-margin-top">
+                        <figcaption class="figcaption">
+                            <code>
+                                &lt;input type="range" /&gt;
+                            </code>
+                            (Vista de Microsoft Edge)
+                        </figcaption>
+                        <img src="../assets/imgs/formularios/type-range.png" alt="Input de tipo range">
+                    </figure>
+                    <p>Este input aunque no se usa mucho, permite al usuario elegir entre un rango de valores predefinidos.</p>
+                    <p>Admite 3 atributos que permiten gestionar como se desplazará la barra y el mínimo y el máximo de valores posibles asignados.</p>
+                    <dl class="definition-list">
+                        <dt class="definition-list__def">
+                            <code>min=""</code>
+                        </dt>
+                        <dd class="definition-list__desc">Permite asignar un mínimo al rango del input.</dd>
+                        <dt class="definition-list__def">
+                            <code>max=""</code>
+                        </dt>
+                        <dd class="definition-list__desc">Permite asignar un máximo al rango del input.</dd>
+                        <dt class="definition-list__def">
+                            <code>step=""</code>
+                        </dt>
+                        <dd class="definition-list__desc">Este atributo permite designar de a cuanto se va a mover la barra. Por ejemplo si establecemos <code>min="0"</code> y <code>max="10"</code> y <code>step="5"</code>, solo podrá moverse tres posiciones.</dd>
+                    </dl>
+                    <figure class="figure">
+                        <figcaption class="figcaption">
+                            Imagen del ejemplo descrito
+                        </figcaption>
+                        <img src="../assets/imgs/formularios/type-range-2.png" alt="Ejemplo del atributo step en los inputs de tipo range">
+                    </figure>
+            </article>
+            <article class="article">
+                <h2>Input de tipo reset</h2>
+                    <figure class="figure no-margin-top">
+                        <figcaption class="figcaption">
+                            <code>
+                                &lt;input type="reset" /&gt;
+                            </code>
+                        </figcaption>
+                        <img src="../assets/imgs/formularios/type-reset.png" alt="Input de tipo reset">
+                    </figure>
+                    <p>Al igual que el botón de tipo reset, este input deja el formulario con el estado por defecto en todos los inputs que tenga. No recarga la página como lo hace el <a href="./o-c_formularios.html#utton-type-submit" title="Sección boton de tipo submit vs input de tipo botón">botón de tipo submit</a>.</p>
+            </article>
+            <article id="type-text" class="article">
+                <h2>Input de tipo texto</h2>
+                    <figure class="figure no-margin-top">
+                        <figcaption class="figcaption">
+                            <code>
+                                &lt;input type="text" /&gt;
+                            </code>
+                        </figcaption>
+                        <img src="../assets/imgs/formularios/type-text.png" alt="Input de tipo texto">
+                    </figure>
+                    <p>Este es el valor por defecto de cualquier input que no tenga un <code>type=""</code> declarado. Los inputs en el atributo <code>type=""</code> pueden recibir el valor <span class="emphasis">hidden</span>, lo cual esconde el input al usuario. Esto es útil cuando queremos que en función de lo que elija el usuario mostrar <strong>por javascript</strong> o no un input, y si queremos que el input que debemos mostrar es de tipo input, pues cambiamos el valor <span class="emphasis">hidden</span> por <span class="emphasis">text</span>.</p>
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-e_formularios.html" title="Sección Formularios del curso (parte cinco)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-g_formularios.html" title="Sección Formularios del curso (parte siete)">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

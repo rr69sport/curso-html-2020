@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios - button vs type button</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-b_formularios.html" title="Sección Formularios del curso (parte dos)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-d_fomularios.html" title="Sección Formularios del curso (parte cuatro)">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="button-type-submit" class="article">
+                <h1><code>&lt;button&gt;</code> vs <code>type="button"</code></h1>
+                <figure class="figure">
+                    <figcaption class="figcaption">Sintaxis de un <code>&lt;button&gt;</code> y de un <code>&lt;input type="button"&gt;</code></figcaption>
+                    <img src="../assets/imgs/formularios/button_vs_type_button.png" alt="Sintaxis html para un elemento botón y un elemento input de tipo botón">
+                </figure>
+                <p>A primera vista notamos que para el input poder mostrar un texto, debemos declararle el atributo <code>value=""</code>, eso es porque <em>los inputs no tiene etiqueta de cierre como lo tiene el elemento button</em> <code>&lt;button&gt;Texto&lt;/button&gt;</code></p>
+                <p>El código mostrado arriba, a efecto visual para el usuario no tiene diferencia ninguna como muestra la siguiente imagen.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Así se ven en el navegador</figcaption>
+                    <img src="../assets/imgs/formularios/button_vs_type_button_visual.png" alt="Captura de como se ve en el navegador un elemento de tipo botón y un elemento botón">
+                </figure>
+                <p>Sin embargo sí tienen diferencias internas. Veámos un ejemplo:</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Diferencia entre <code>&lt;button&gt;</code> vs <code>type="button"</code></figcaption>
+                    <img src="../assets/imgs/formularios/button_vs_type_button_ejemplo.png" alt="Captura de un formulario sencillo para mostrar la diferencia entre un elemento y otro">
+                </figure>
+                <p>Si llenamos el campo de texto que muestra ese formulario y le damos al input de tipo botón, veremos que no sucede nada. Pero si le damos al elemento button, veremos que el formulario se vacía y se recarga la página, esto lo explicamos en la <a href="./o-a_formularios.html#send-form" title="Comportamiento por defecto un formulario">primera parte de esta sección formularios</a>, pero además de eso, es también porque <strong>un elemento button es por defecto de tipo submit</strong>, para que un input tenga el mismo comportamiento, en vez de declararle en el atributo <code>type=""</code> de tipo button, declararlo de tipo submit.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Un ejemplo de las 3 formas</figcaption>
+                    <img src="../assets/imgs/formularios/type_submit_type_button_button_codigo.png" alt="Captura de un input de tipo submit, de tipo botón y de un elemento botón">
+                </figure>
+                <figure class="figure">
+                    <figcaption class="figcaption">Vista en el navegador</figcaption>
+                    <img src="../assets/imgs/formularios/type_submit_type_button_button.png" alt="Captura de un input de tipo submit, de tipo botón y de un elemento botón">
+                </figure>
+                <p>Un input de tipo botón, nos puede servir para hacer algún tipo de operación por javascript en el formulario o cualquier otra cosa que no sea enviar el formulario, aunque podemos generar ese comportamiento por medio de javascript para eso está submit.</p>
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-b_formularios.html" title="Sección Formularios del curso (parte dos)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-d_fomularios.html" title="Sección Formularios del curso (parte cuatro)">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

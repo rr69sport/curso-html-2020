@@ -40,10 +40,10 @@
                     <a class="main-menu__link" href="../">Inicio</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./i_atributos.html">Sección anterior</a>
+                    <a class="main-menu__link" href="./i_atributos.html" title="Sección Atributos del curso">Sección anterior</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./k_rutas.html">Siguiente sección</a>
+                    <a class="main-menu__link" href="./k_rutas.html" title="Sección Rutas del curso">Sección siguiente</a>
                 </li>
             </ul>
         </nav>
@@ -55,144 +55,57 @@
             </header>
             <section>
                 <h2>¿Qué es un enlace?</h2>
-                <p>
-                    Conocidos también por <em>links</em> popularmente. Su
-                    objetivo es conectar una página web con otra página web,
-                    con un recurso tanto interno como externo, o con otro
-                    sitio web.
-                </p>
-                <p>
-                    Tienen el atributo obligatorio <em>href</em>, donde le
-                    especificamos la ruta del recurso o sitio que queremos
-                    obtener. También tiene el atributo <em>target</em>, que
-                    configura cómo queremos visualizar el recurso o sitio
-                    que solicitamos.
-                </p>
-                <p>
-                    Algo importante, es que la web si no fuera por los
-                    enlaces no sería lo que es, ya que en su totalidad, se
-                    basa en los enlaces que fue como nació.
-                </p>
+                <p>Conocidos también por <em>links</em> popularmente. Su objetivo es conectar una página web con otra página web, con un recurso tanto interno como externo, o con otro sitio web. </p>
+                <p>Tienen el <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> obligatorio <code>href</code>, donde le especificamos la ruta del recurso o sitio que queremos obtener. También tiene el <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> <a href="#attribute-target" title="Atrubuto TARGET en enlaces"><code>target=""</code></a>, que configura cómo queremos visualizar el recurso o sitio que solicitamos.</p>
+                <p>Algo importante, es que la web si no fuera por los enlaces no sería lo que es, ya que en su totalidad, se basa en los enlaces que fue como nació.</p>
             </section>
             <section>
                 <h2>Estructura de un enlace</h2>
                 <figure class="figure">
-                    <figcaption class="figcaption">
-                        Estructura básica
-                    </figcaption>
-                    <img src="../assets/imgs/enlace_basico.png" alt="Estructura básica de un enlace" />
+                    <figcaption class="figcaption">Estructura básica</figcaption>
+                    <img src="../assets/imgs/enlaces/enlace_basico.png" alt="Estructura básica de un enlace" />
                 </figure>
-                <p>
-                    La etiqueta de un enlace se representa con la letra
-                    <em>a</em> que significa <strong>Anchor</strong> en
-                    inglés, o <strong>Ancla</strong> en español.
-                </p>
-                <p>
-                    Todo enlace para que funcione como tal debe ser una
-                    etiqueta <code>&lt;a&gt;</code> con su etiqueta de
-                    cierre <code>&lt;/a&gt;</code> obligatoria. También es
-                    obligatorio el atributo <code>href=""</code> ya que ahí
-                    es donde le decimos al navegador donde tiene que ir al
-                    momento de clickear el enlace, siendo visible al usuario
-                    el texto que lleve dentro de la etiqueta como tal, en el
-                    caso de la imagen <span class="emphasis">YouTube</span>.
-                </p>
-                <p>
-                    Por defecto un enlace cuando lo clickeamos, se abre en
-                    la misma ventana que estamos al momento de hacer click.
-                    Eso es porque por defecto tiene un atributo que es
-                    opcional llamado <code>target=""</code>. Este atributo
-                    por defecto está definido en
-                    <code>target="_self"</code>. Pero si queremos que el
-                    enlace se abra en otra ventana diferente a la que
-                    estamos, debemos declararlo en
-                    <code>target="_blank"</code>.
-                </p>
+                <p>La etiqueta de un enlace se representa con la letra <em>a</em> que significa <strong>Anchor</strong> en inglés, o <strong>Ancla</strong> en español.</p>
+                <p>Todo enlace para que funcione como tal debe ser una etiqueta <code>&lt;a&gt;</code> con su etiqueta de cierre <code>&lt;/a&gt;</code> obligatoria. También es obligatorio el <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> <code>href=""</code> ya que ahí es donde le decimos al navegador donde tiene que ir al momento de clickear el enlace, siendo visible al usuario el texto que lleve dentro de la etiqueta como tal, en el caso de la imagen <span class="emphasis">YouTube</span>.</p>
+                <p>Por defecto un enlace cuando lo clickeamos, se abre en la misma ventana que estamos al momento de hacer click. Eso es porque por defecto tiene un <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> que es opcional llamado <code>target=""</code>. Este <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> por defecto está definido en <code>target="_self"</code>. Pero si queremos que el enlace se abra en otra ventana diferente a la que estamos, debemos declararlo en <code>target="_blank"</code>.</p>
                 <figure class="figure">
-                    <figcaption class="figcaption">
-                        Atributo target
-                    </figcaption>
-                    <img src="../assets/imgs/enlace_black.png" alt="Usando el atributo _black en los enlaces" />
+                    <figcaption class="figcaption">Atributo <code>target=""</code></figcaption>
+                    <img src="../assets/imgs/enlaces/enlace_blank.png" alt="Usando el atributo _black en los enlaces" />
                 </figure>
-                <p>
-                    Hay más opciones para declarar en el atributo
-                    <code>target=""</code> pero lás más comunes de usar son
-                    estas dos: <code>target="_self"</code> que es la opción
-                    por defecto y que abre el enlace en la misma ventana en
-                    la que estamos, y <code>target="_blanck"</code> que abre
-                    el enlace en una nueva ventana.
-                </p>
-                <p>
-                    Por norma general, cuando uses rutas absolutas se usa
-                    <code>_blank</code>
-                </p>
-                <section>
-                    <h3>
-                        Otras opciones del atributo <code>target=""</code>
-                    </h3>
+                <p>Hay más opciones para declarar en el <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> <code>target=""</code> pero lás más comunes de usar son estas dos: <code>target="_self"</code> que es la opción por defecto y que abre el enlace en la misma ventana en la que estamos, y <code>target="_blank"</code> que abre el enlace en una nueva ventana.</p>
+                <p>Por norma general, cuando uses rutas absolutas se usa <code>_blank</code>.</p>
+                <section id="attribute-target">
+                    <h3>Otras opciones del atributo <code>target=""</code></h3>
                     <blockquote class="blockuote" cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a">
                         <dl class="definition-list">
                             <dt class="definition-list__def">
                                 <code>_parent</code>
                             </dt>
-                            <dd class="definition-list__desc">
-                                Carga la URL en el contexto de navegación
-                                padre (parent) del actual. Si no existe el
-                                padre, este se comporta del mismo modo que
-                                <code>_self</code>.
-                            </dd>
-                            <dt class="definition-list__def">
-                                <code>_top</code>
-                            </dt>
-                            <dd class="definition-list__desc">
-                                Carga la URL en le contexto más alto de
-                                navegación (el cual es un ancestro del
-                                actual, y no tiene padre (parent)). Si no
-                                hay padre (parent), este se comporta del
-                                mismo modo que <code>_self</code>
-                            </dd>
+                            <dd class="definition-list__desc">Carga la <a href="../index.html#concepts" title="Conceptos en los que se basa la web">URL</a> en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que <code>_self</code>.</dd>
+                            <dt class="definition-list__def"><code>_top</code></dt>
+                            <dd class="definition-list__desc">Carga la <a href="../index.html#concepts" title="Conceptos en los que se basa la web">URL</a> en le contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que <code>_self</code>.</dd>
                         </dl>
                     </blockquote>
                     <footer>
-                        <p>
-                            <small>Extraído de la documentación de la
-                                <a target="_blank"
-                                    href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>
-                                sobre el elemento
-                                <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a"
-                                    title="Elemento A">a</a>.</small>
-                        </p>
+                        <p><small>Extraído de la documentación de la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a> sobre el elemento <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a" title="Especificación sobre una etiqueta A de la MDN">a</a>.</small></p>
                     </footer>
                 </section>
-                <p>
-                    También existe el atributo <code>download</code> que es
-                    un booleano y sirve para descargar el recurso
-                    solicitado. Es importante que el recurso esté en tu
-                    mismo servidor.
-                </p>
+                <p>También existe el <a href="./i_atributos.html" title="Sección Atributos del curso">atributo</a> <code>download</code> que es un booleano y sirve para descargar el recurso solicitado. Es importante que el recurso esté en tu mismo servidor.</p>
             </section>
         </article>
     </main>
     <footer>
-        <p>
-            El curso lo dicta
-            <a target="_blank" target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian
-                Desings (Canal de YouTube)</a>, y tiene la validación de la
-            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
-            la documentación brindada por la
-            <a target="_blank" target="_blank"
-                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
-        </p>
+        <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="../">Inicio</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./i_atributos.html">Sección anterior</a>
+                    <a class="main-menu__link" href="./i_atributos.html" title="Sección Atributos del curso">Sección anterior</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./k_rutas.html">Siguiente sección</a>
+                    <a class="main-menu__link" href="./k_rutas.html" title="Sección Rutas del curso">Sección siguiente</a>
                 </li>
                 <li class="main-menu__item main-menu__item--go-top">
                     <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>

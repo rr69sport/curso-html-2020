@@ -38,10 +38,10 @@
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-ii.html">Sección anterior</a>
+                        <a class="main-menu__link" href="./m_tablas-ii.html" title="Sección Tablas del curso (segunda parte)">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-iv.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./m_tablas-iv.html" title="Sección Tablas del curso (cuarta parte)">Sección siguiente</a>
                     </li>
                 </ul>
             </nav>
@@ -60,50 +60,50 @@
                     <dt class="definition-list__def">colspan</dt>
                     <dd class="definition-list__desc">Sirve para que una celda ocupe más de una columna, también es 1 el valor por defecto.</dd>
                 </dl>
-                <p>Cuando necesitamos seleccionar una columna, tenemos la etiqueta <strong>colgroup</strong>, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas <em>col</em> como columnas tengamos, cada etiqueta <em>col</em> equivaldrá a una columna siguiendo el mismo orden que tienen en la tabla.</p>
-                <p>Si necesitamos que una etiqueta <em>col</em> agrupe más de una columna, tenemos el atributo <strong>span</strong>, que funciona exactamente igual que <em>rowspan</em> y <em>colspan</em>.</p>
+                <p>Cuando necesitamos seleccionar una columna, tenemos la etiqueta <code>colgroup</code>, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas <code>col</code> como columnas tengamos, cada etiqueta <code>col</code> equivaldrá a una columna siguiendo el mismo orden que tienen en la tabla.</p>
+                <p>Si necesitamos que una etiqueta <code>col</code> agrupe más de una columna, tenemos el atributo <code>span=""</code>, que funciona exactamente igual que <code>rowspan</code> y <code>colspan</code>.</p>
                 <figure class="figure">
                     <figcaption class="figcaption">Uso de colspan y rowspan</figcaption>
-                    <img src="../assets/imgs/rowspan-colspan-tablas.png" alt="Forma de usar correctamente rowspan y colspan">
+                    <img src="../assets/imgs/tablas/rowspan-colspan-tablas.png" alt="Forma de usar correctamente rowspan y colspan">
                 </figure>
                 <figure class="figure">
                     <figcaption class="figcaption">La tabla que muestra la imagen el navegador la representa así:</figcaption>
-                    <table>
+                    <table class="table-code">
                         <caption>Título</caption>
                         <thead>
                             <tr>
-                                <th>TH 1 - THEAD</th>
-                                <th>TH 2 - THEAD</th>
-                                <th>TH 3 - THEAD</th>
+                                <th class="th">TH 1 - THEAD</th>
+                                <th class="th">TH 2 - THEAD</th>
+                                <th class="th">TH 3 - THEAD</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="emphasis" rowspan="2" >TD 1 - TBODY</td>
-                                <td class="emphasis" colspan="2">TD 2 / 3 - TBODY</td>
+                                <td class="emphasis th" rowspan="2" >TD 1 - TBODY</td>
+                                <td class="emphasis th" colspan="2">TD 2 / 3 - TBODY</td>
                             </tr>
                             <tr>
-                                <td>TD 2 - TBODY</td>
-                                <td>TD 3 - TBODY</td>
+                                <td class="td">TD 2 - TBODY</td>
+                                <td class="td">TD 3 - TBODY</td>
                             </tr>
                         </tbody>
                     </table>
                 </figure>
-                <p>Como notarás en las celdas coloreadas (por css para que se vea), para que una celda ocupe 2 filas o 2 columnas, es necesario que el lugar de la celda que va a ocupar, no tenga una celda declarada en el html, sino el navegador lo que hace es desbordar la celda que sobra.</p>
+                <p>Como notarás en las celdas coloreadas (por css para que se vea), para que una celda ocupe 2 filas o 2 columnas, es necesario que el lugar de la celda que va a ocupar, no tenga una celda declarada en el <a href="../index.html#concepts" title="Conceptos en los que se basa la web">HTML</a>, sino el navegador lo que hace es desbordar la celda que sobra.</p>
             </article>
         </main>
         <footer>
-            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a href="https://validator.w3.org">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.</p>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
             <nav>
                 <ul class="main-menu">
                     <li class="main-menu__item">
                         <a class="main-menu__link" href="../">Inicio</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-ii.html">Sección anterior</a>
+                        <a class="main-menu__link" href="./m_tablas-ii.html" title="Sección Tablas del curso (segunda parte)">Sección anterior</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="./m_tablas-iv.html">Siguiente sección</a>
+                        <a class="main-menu__link" href="./m_tablas-iv.html" title="Sección Tablas del curso (cuarta parte)">Sección siguiente</a>
                     </li>
                     <li class="main-menu__item main-menu__item--go-top">
                         <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>

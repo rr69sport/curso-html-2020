@@ -40,10 +40,10 @@
                     <a class="main-menu__link" href="../">Inicio</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./d_header-y-footer.html">Sección anterior</a>
+                    <a class="main-menu__link" href="./d_header-y-footer.html" title="Sección HEADER y FOOTER del curso">Sección anterior</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./f_aside.html">Siguiente sección</a>
+                    <a class="main-menu__link" href="./f_aside.html" title="Sección ASIDE del curso">Sección siguiente</a>
                 </li>
             </ul>
         </nav>
@@ -52,114 +52,52 @@
         <header>
             <h1>Etiquetas de definición explícita. Parte II</h1>
         </header>
-        <section>
-            <h2>Section, Article</h2>
-            <article class="article">
-                <header>
-                    <h3>Article</h3>
+        <article>
+            <h2><code>&lt;article&gt;</code> y <code>&lt;section&gt;</code></h2>
+            <section class="article">
+                <header id="article">
+                    <h3>Etiqueta <code>&lt;article&gt;</code></h3>
                 </header>
-                <p>
-                    Es un contenedor que representa contenido independiente,
-                    es decir, podemos leer ese fragmento en cualquier otro
-                    sitio y tendrá sentido por sí mismo. Al ser contenido
-                    independiente y con sentido por sí mismo, implica que
-                    pueda tener un <em>header</em> y un
-                    <em>footer</em> propios.
-                </p>
-                <footer>
-                    <p>Este es el pie de página del artículo.</p>
-                </footer>
-            </article>
-            <article class="article">
-                <header>
-                    <h3>Section</h3>
+                <p>Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo. Al ser contenido independiente y con sentido por sí mismo, implica que pueda tener un <em><a href="./d_header-y-footer.html#header" title="Etiqueta HEADER">header</a></em> y un <em><a href="./d_header-y-footer.html#footer" title="Etiqueta FOOTER">footer</a></em> propios.</p>
+            </section>
+            <section class="article">
+                <header id="section">
+                    <h3>Etiqueta <code>&lt;section&gt;</code></h3>
                 </header>
-                <p>
-                    Es un contenedor genérico que agrupa contenido que está
-                    relacionado. Cuando creamos bloques cuyo contenido es
-                    parte de un bloque mayor, usamos <em>section</em>.
-                </p>
-                <p>
-                    <strong>Importante:</strong>
-                    No se debe usar el elemento <em>section</em> como un
-                    mero contenedor genérico, para esto ya existe
-                    <em>div</em>, especialmente si el objetivo solamente es
-                    aplicar un estilo (CSS) a la sección.
-                </p>
-                <p>
-                    Como regla general, el título de una sección debería
-                    aparecer en el esquema del documento.
-                </p>
-                <footer>
-                    <p>Este es el pie de página del artículo.</p>
-                </footer>
-            </article>
-            <article class="article">
+                <p> Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloqueo mayor, usamos <em>section</em>.</p>
+                <p> <strong>Importante:</strong> No se debe usar el elemento <em>section</em> como un mero contenedor genérico, para esto ya existe <em>div</em>, especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección.</p>
+                <p>Como regla general, el título de una sección debería aparecer en el esquema del documento.</p>
+            </section>
+            <section class="article">
                 <header>
-                    <h3>
-                        ¿Cuál es la forma correcta de anidar etiquetas
-                        <em>section</em> y <em>article</em>?
-                    </h3>
+                    <h3>¿Cuál es la forma correcta de anidar etiquetas <em>section</em> y <em>article</em>?</h3>
                 </header>
-                <p>
-                    La respuesta es que un <em>article</em> puede contener
-                    elementos <em>section</em> y un <em>section</em> puede
-                    contener elementos <em>article</em>.
-                </p>
+                <p>La respuesta es que un <em>article</em> puede contener elementos <em>section</em> y un <em>section</em> puede contener elementos <em>article</em>.</p>
                 <figure class="figure">
-                    <figcaption class="figcaption">
-                        Ejemplo de una etiqueta <em>section</em> anidando
-                        etiquetas <em>article</em>
-                    </figcaption>
-                    <img src="../assets/imgs/section-anidando-article.png"
-                        alt="Etiqueta section anidando la etiqueta article" />
+                    <figcaption class="figcaption">Ejemplo de una etiqueta <em>section</em> anidando etiquetas <em>article</em></figcaption>
+                    <img src="../assets/imgs/etiquetas_article_y_section/section-anidando-article.png" alt="Etiqueta section anidando la etiqueta article" />
                 </figure>
-                <p>
-                    Como puedes ver, cada artículo tiene sentido por sí
-                    solo, y si estuviera en cualquier otro sitio, seguiría
-                    teniendo sentido. La etiqueta <em>section</em> los anida
-                    formando un bloque mayor que en este caso es "Etiquetas
-                    de definición explícita"
-                </p>
+                <p>Como puedes ver, cada artículo tiene sentido por sí solo, y si estuviera en cualquier otro sitio, seguiría teniendo sentido. La etiqueta <em>section</em> los anida formando un bloque mayor que en este caso es "Etiquetas de definición explícita".</p>
                 <figure class="figure">
-                    <figcaption class="figcaption">
-                        Ejemplo de una etiqueta <em>article</em> anidando
-                        etiquetas <em>section</em>
-                    </figcaption>
-                    <img src="../assets/imgs/article-anidando-section.png"
-                        alt="Etiqueta article anidando la etiqueta section" />
+                    <figcaption class="figcaption">Ejemplo de una etiqueta <em>article</em> anidando etiquetas <em>section</em>.</figcaption>
+                    <img src="../assets/imgs/etiquetas_article_y_section/article-anidando-section.png" alt="Etiqueta article anidando la etiqueta section" />
                 </figure>
-                <p>
-                    Aquí cada sección es un navegador distinto pero los dos
-                    pertencen al mismo artículo, en este caso "Navegadores
-                    más usados en 2020"
-                </p>
-                <footer>
-                    <p>Este es el pie de página del artículo.</p>
-                </footer>
-            </article>
-        </section>
+                <p>Aquí cada sección es un navegador distinto pero los dos pertencen al mismo artículo, en este caso "Navegadores más usados en 2020".</p>
+            </section>
+        </article>
     </main>
     <footer class="footer">
-        <p>
-            El curso lo dicta
-            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
-                YouTube)</a>, y tiene la validación de la
-            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
-            la documentación brindada por la
-            <a target="_blank"
-                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
-        </p>
+        <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="../">Inicio</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./d_header-y-footer.html">Sección anterior</a>
+                    <a class="main-menu__link" href="./d_header-y-footer.html" title="Sección HEADER y FOOTER del curso">Sección anterior</a>
                 </li>
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="./f_aside.html">Siguiente sección</a>
+                    <a class="main-menu__link" href="./f_aside.html" title="Sección ASIDE del curso">Sección siguiente</a>
                 </li>
                 <li class="main-menu__item main-menu__item--go-top">
                     <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>

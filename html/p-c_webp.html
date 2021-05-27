@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Imágenes de bits WEBP</title>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3" />
+
+    <meta name="author" content="@rr69sport" />
+    <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Curso de HTML5 versión 2020" />
+    <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+    <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RichardRamSua" />
+    <meta name="twitter:creator" content="@RichardRamSua" />
+    <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="..assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="..assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="..assets/favicon_io/site.webmanifest" />
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+    
+<body id="body" class="body">
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-b_bits_vectoriales.html" title="Sección Bits Vectoriales del curso">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-d_insertar_imagenes.html" title="Sección Insertar imágenes del curso">Sección siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article">
+            <h1>Imágenes de bits WEBP</h1>
+            <p>
+                Las imágenes de bits están compuestas por pequeños cuadrados que se llaman <strong>píxeles</strong>. A mayor tamaño de la imagen más pixeles tenemos. Al hacer zoom en la imagen podemos verlos mejor. 
+            </p>
+            <figure class="figure">
+                <img src="../assets/imgs/imagenes/pixel.png" alt="ejemplo de píxeles">
+            </figure>    
+
+            <p>
+                <em>Éstas imágenes añaden peso a la web. Cuanto mayor resolución tenga la imagen mayor peso va a añadir a nuestra web.</em>
+            </p>
+
+            <p>
+            Tenemos imágenes en formatos <em>JPG</em>, que es el formato más comprimido pero no soportan animaciones ni transparencias; los <em>PNG</em>, que sí soportan transparencias y los <em>GIF</em>, que soportan animaciones.
+
+            <p>
+                Ahora veamos cuál es el formato más adecuado para web y así poder trabajar con el menor peso posible. Recordemos que las ventajas de usar el formato WEBP es que la imagen está mucho más comprimida sin perder calidad. Además soporta jpg, png y gif.
+            </p>
+            <p>
+                Utilizaremos la herramienta <a target="_blank" href="https://image.online-convert.com/">Image online converter</a> para convertir las imágenes a WEBP.
+                Al ser formato para web por defecto se abre con un navegador.
+                Luego de convertir a webp y descargar las imágenes, podemos comprobar como ha disminuido el tamaño de las imágenes desde "Propiedades de la imagen". De esta forma optimizamos la carga de nuestra web.
+            </p>
+
+            <h2>Comparación de imágenes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen original</th>
+                        <th>Formato WEBP</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <figure class="figure">
+                            <img src="../assets/imgs/imagenes/portada.jpg" alt="portada formato jpg">
+                        </figure>
+                    </td>
+                    <td>
+                        <figure class="figure">
+                            <img src="../assets/imgs/imagenes/portada.webp" alt="portada formato webp">
+                        </figure>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>
+                        <figure class="figure">
+                            <img src="../assets/imgs/imagenes/nala.png" alt="nala formato png">
+                        </figure>
+                    </td>
+                    <td>
+                        <figure class="figure">
+                            <img src="../assets/imgs/imagenes/nala.webp" alt="nala formato webp">
+                        </figure>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>
+                        <figure class="figure">
+                            <img src="../assets/imgs/imagenes/Pikachu.gif" alt="pikachu formato gif">
+                        </figure>
+                    </td>
+                    <td>
+                        <figure class="figure">
+                            <img src="../assets/imgs/imagenes/Pikachu.webp" alt="pikachu formato webp">
+                        </figure>
+                    </td>    
+                </tr>
+            </table>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>
+            El curso lo dicta
+            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
+                YouTube)</a>, y tiene la validación de la
+            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
+            la documentación brindada por la
+            <a target="_blank"
+                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
+        </p>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-b_bits_vectoriales.html" title="Sección Bits Vectoriales del curso">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-d_insertar_imagenes.html" title="Sección Insertar Imágenes del curso">Sección siguiente</a>
+                </li>
+                <li class="main-menu__item main-menu__item--go-top">
+                    <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios - Más etiquetas de fomrularios</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-i_formularios.html" title="Sección Foremularios del curso (parte nueve)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-k_formularios.html" title="Sección Formularios del curso (parte once)">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Más elementos de formulario</h1>
+            </header>
+            <article class="article">
+                <h2>
+                    <code>&lt;fieldset&gt;&lt;/fieldset&gt;</code>
+                </h2>
+                <p>Se utiliza para agrupar elementos de un formulario que estén relacionados. Por ejemplo agrupar los inputs que piden los datos como el nombre, el apellido, la edad y en otro elemento fieldset agrupar datos como sus deportes favoritos, etc etc. De manera opcional lleva la etiqueta <span class="emphasis">legend</span> para título al fieldset.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Código de ejemplo de la etiqueta <code>&lt;fieldset&gt;&lt;/fieldset&gt;</code></figcaption>
+                    <img src="../assets/imgs/formularios/fieldset-code.png" alt="Etiqueta fieldset (código de ejemplo)">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">Vista navegador de la etiqueta <code>&lt;fieldset&gt;&lt;/fieldset&gt;</code></figcaption>
+                    <img src="../assets/imgs/formularios/fieldset-view.png" alt="Etiqueta fieldset (cvista navegador)">
+                </figure>
+                <p>El borde que tiene la etiqueta fieldset por css se puede editar oquitar, al igual que casi todas las etiquetas de formularios.</p>
+            </article>
+            <article class="article">
+                <h2>Input de tipo file</h2>
+                <p>Este input lo que nos permite es poder cargar archivos que podemos enviar a través del formulario. Conm HTML solamente es muy poco lo que se puede hacer, se necesita javascript para un mejor desempeño de este input, y de css para una mejor estilización. Cuando le damos click a un input de tipo file, lo que hace es abrir una ventana del sistema operativo para poder seleccionar un archivo.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="file" /&gt;
+                        </code>
+                        vista navegador
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/type-file-view.png" alt="input de tipo file vista navegador">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="file" /&gt;
+                        </code>
+                        código
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/type-file-code.png" alt="input de tipo file vcodigo HTML">
+                </figure>
+            </article>
+            <article class="article">
+                <h2>Etiqueta meter</h2>
+                <p>Esta etiqueta sirve para representar un valor dentro de un rango conocido. Utiliza distontos atributos que nos ayudan a pintar elementos en la barra. El <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" title="Ejemplo de la MDN de uso de la etiqueta meter">ejemplo</a> que da la MDN es de un contador de gasolina. </p>
+                <h3>Sin atributos</h3>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        código sin atributos
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-without-attr-code.png" alt="Código sin atributos d la etiqueta meter">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        sin atributos (vista navegador)
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-without-attr-view.png" alt="Código sin atributos d la etiqueta meter">
+                </figure>
+                <h3>Con atributos</h3>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        código con atributos
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-with-attr-code.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        con atributos (vista navegador)
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-with-attr-view.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+                <p>El atributo <code>value=""</code> al estar declarado en un valor justo a la mitad, muestra la barra de color verde a la mitad también, de estar en otro lugar marcaría la pocisión que le asignemos.</p>
+                <p>Tienen otros atributos que nos permiten en función de cuanto esté cargada o vacía la barra cambiar el color de la barra. Estos atributos son: <code>low=""</code> que si el valor cae por debajo del que tiene declarado la barra se pondra de fondo rojo, <code>higth=""</code> que si <code>value=""</code> es mayor que <code>low=""</code> y menor que <code>higth=""</code> la barra cambiará el color de fondo a amarillo, y si supera el valor de <code>hight=""</code> la barra se cambiará a fondo verde, está también el atributo <code>optimum=""</code> que si el <code>value=""</code> está por encima del valor asignado a este atributo, también se cambiará a fondo verde.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        con atributos (vista navegador)
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-with-attr-code-2.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+                
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        con un valor menor a 20
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-with-attr-view-20.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        con un valor entre 20 y 75
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-with-attr-view-50.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;meter&gt;&lt;meter/&gt;
+                        </code>
+                        con un valor mayor a hight
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/meter-with-attr-view-90.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+            </article>
+            <article class="article">
+                <h2>Etiqueta progress</h2>
+                <p>Esta etiqueta se utiliza para representar el trabajo de una tarea. Un ejemplo puede ser cuando subimos un archivo a internet y aparece una barra de carga, o cuando descargamos un archivo, esa barra de progreso se representa con la etiqueta progres. Se debe establecer un máximo por medio del atributo <code>max=""</code> y un <code>value=""</code>, este atributo para que sea dinámico se manipula por javascript.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;progress&gt;&lt;progress/&gt;
+                        </code>
+                        Código de ejemplo de la etiqueta progress
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/progress-vcode.png" alt="Código con atributos d la etiqueta meter">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;progress&gt;&lt;progress/&gt;
+                        </code>
+                        vista navegador
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/progress-view.png" alt="Vista navegador de la etiqueta meter">
+                </figure>
+            </article>
+            <article class="article">
+                <h2>Etiqueta textarea</h2>
+                <p>Esta etiqueta es muy común verla, porque permite introducir un texto mucho más largo que lo que permiten los inputs de tipo texto. Un ejemplo de uso puede ser cuando le pides una descripción de algo al usuario. Por defecto los editores de código añaden los atributos <code>cols=""</code> y <code>rows=""</code> para definirle un tamaño al textarea, <code>cols=""</code> corresponde a la cantidad de caracteres que se pueden escribir antes de que salte a la siguiente línea, y <code>rows=""</code> corresponde a la cantidad de líneas que tendrá el mensaje antes de que aparezca una barra de scroll al costado, pero por css podemos darle los estilos que queramos y prescindir de esos atributos, aunque si se usan son totalmente válidos también.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;textarea&gt;&lt;textarea/&gt;
+                        </code>
+                        vista navegador
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/textarea-view.png" alt="Vista navegador de la etiqueta textarea">
+                </figure>
+                <p>El cuadrado rojo marca dos líneas inclinadas que son para cambiar el tamaño del textarea, pero también por css podemos manipular eso.</p>
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-i_formularios.html" title="Sección Foremularios del curso (parte nueve)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-k_formularios.html" title="Sección Formularios del curso (parte once)">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Device pixel ratio</title>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3" />
+
+    <meta name="author" content="@rr69sport" />
+    <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Curso de HTML5 versión 2020" />
+    <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+    <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RichardRamSua" />
+    <meta name="twitter:creator" content="@RichardRamSua" />
+    <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body id="body" class="body">
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-d_insertar_imagenes.html" title="Sección Insertar imágenes del curso">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-f_atributo_srcset.html" title="Sección Atributo srcset del curso">Sección siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article">
+            <h1>Device Pixel Ratio</h1>
+            <p>
+                El concepto de <em>Device Pixel Ratio</em> es algo muy importante cuando se trabaja en desarollo web y sobre todo cuando se trabaja para adaptar una web a un móvil, cuando queremos hacer webs que se vean bien en un móvil lo que se denomina <em>responsive</em>.
+            </p>        
+            <p>
+                <strong>DPR (Device Pixel Ratio)</strong>, es la relación que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido. <br>
+                DPR = pixeles reales / pixeles disponibles
+            </p>
+
+            <p>
+                El viewport es el espacio que tenemos disponible para dibujar. Esta página nos indica la resolución de pantalla que estamos usando, <a target="_blank" href="http://whatismyviewport.com">what is my viewport</a>.
+            </p>
+
+            <figure class="figure">
+                <img src="../assets/imgs/device_pixel_ratio/viewport.png" alt="resolución de pantalla">
+            </figure>
+
+            <p>
+                Como podemos notar la resolución de pantalla es de 1920px por 969px cuando el alto de la pantalla real es de 1080px. Esto significa que nuestro espacio disponible es menor ya que la diferencia se lo toma el navegador. En este caso el DPR que indica es 1.
+            </p>
+            <p>
+                Ahora veremos como este espacio para dibujar es completamente diferente en móviles. Cuando trabajamos en un móvil nunca es dpr 1, normalmente es 2 o más de 3. Desde el inspector de Chrome vamos a cambiar la pantalla a la resolución de un móvil Motog4 o GalaxyS5. El espacio disponible aqui es de un dpr igual a 3. Esto porque la resolución de pantalla es de 360px por 640px.
+            </p>
+
+            <figure class="figure">
+                <img src="../assets/imgs/device_pixel_ratio/viewport_mobile.png" alt="resolución de pantalla de un móvil">
+            </figure>
+
+            <p>
+                Tomaremos como ejemplo la carga de una imagen con un width de 300px y como se comporta el dpr en el móvil y en el desktop. Recuerda que es un ejemplo, el width no debe ir en el html salvo excepciones.
+            </p>
+
+            <p>
+                Cambiando a la resolución del móvil a GalaxyS5 vemos como el dpr es de 3. Podemos ver la imagen con un tamaño fijo de 300px. Si queremos que se adapte al tamaño de la pantalla le daremos desde css un max-width de 100% y quitaremos el tamaño fijo de 300px.
+            </p>
+
+            <figure class="figure">
+                <figcaption>
+                    Resolución de pantalla del móvil GalaxyS5, 360px por 640px y un DPR de 3
+                </figcaption>
+                <img src="../assets/imgs/device_pixel_ratio/dpr3.png" alt="dpr3 resolución de pantalla móvil">
+            </figure>
+            
+            <figure class="figure">
+                <figcaption>
+                    Resolución de pantalla de un ipad, 768px por 1024px y un DPR de 2
+                </figcaption>
+                <img src="../assets/imgs/device_pixel_ratio/dpr2.png" alt="dpr2 resolución de pantalla ipad">
+            </figure>
+
+            <figure class="figure">
+                <figcaption>
+                    Resolución de pantalla desktop, 1440px por 1093px y un DPR de 1
+                </figcaption>
+                <img src="../assets/imgs/device_pixel_ratio/dpr1.png" alt="dpr1 resolución de pantalla desktop">
+            </figure>
+            
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>
+            El curso lo dicta
+            <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A">Dorian Desings (Canal de
+                YouTube)</a>, y tiene la validación de la
+            <a href="https://validator.w3.org">W3C</a>. El curso se basa en
+            la documentación brindada por la
+            <a target="_blank"
+                href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">MDN</a>.
+        </p>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-d_insertar_imagenes.html" title="Sección Insertar imágenes del curso">Sección anterior</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./p-f_atributo_srcset.html" title="Sección Atributo srcset del curso">Sección siguiente</a>
+                </li>
+                <li class="main-menu__item main-menu__item--go-top">
+                    <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html> 
