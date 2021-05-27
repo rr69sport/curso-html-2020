@@ -31,12 +31,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
 figure {
     margin: 0;
 }
@@ -88,6 +82,7 @@ figure {
     flex-direction: column;
     align-items: center;
 
+    margin-top: 3rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 
@@ -108,6 +103,9 @@ figure {
 }
 .definition-list--full-description {
     grid-template-columns: auto auto 2fr;
+}
+.definition-list--column {
+    grid-template-columns: 1fr;
 }
 .definition-list__def,
 .definition-list__desc {
@@ -171,4 +169,26 @@ figure {
 }
 .important {
     font-weight: 900;
+}
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.font-small {
+    font-size: 75%;
+}
+.small-image {
+    max-width: 400px;
+}
+.no-margin-top {
+    margin-top: 0;
+}
+.margin-left {
+    margin-left: 1.5rem;
+}
+.flex {
+    display: flex;
+}
+.flex-auto {
+    flex: 1 1 0;
 }

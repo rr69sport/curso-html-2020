@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios - Inputs para móviles</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-d_fomularios.html" title="Sección Formularios del curso (parte cuatro)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-f_formularios.html" title="Sección Formularios del curso (parte seis)">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="article">
+                <h1>Inputs para móviles</h1>
+                <p>Estos inputs, aunque son los mismos que se usan para web, en móviles tienen algunas diferencias que por propósitos de experiencia de usuario, tienen ciertas ayudas a la hora de usarlos. Las validaciones básicas que hace el navegador de cada <code>&lt;input/&gt;</code> es la misma tanto en movil como en web.</p>
+                <dl class="definition-list">
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;input type="search"&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para las barras de búsqueda</dd>
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;input type="tel"&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para introducir números de teléfono</dd>
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;input type="email"&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para introducir un email</dd>
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;input type="password"&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para contraseñas</dd>
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;input type="url"&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para introducir URLs</dd>
+                </dl>
+                <figure class="figure">
+                    <figcaption class="figcaption">Vista de navegador de cada input</figcaption>
+                    <img src="../assets/imgs/formularios/inputs-moviles--visual-navegador.png" alt="Vista en navegador de algunos tipos de inputs">
+                </figure>
+                <p>Como se puede ver, en el navegador del ordenador, a simple vista son todos iguales. Pero en móvil tienen algunas diferencias importantes como ya mencionamos.</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="search"&gt;
+                        </code>
+                    </figcaption>
+                    <img class="small-image" src="../assets/imgs/formularios/inputs-moviles/type-search.png" alt="Input de tipo search">
+                </figure>
+                <p>Como se marca con el cuadrado rojo, el input de tipo <span class="emphasis">search</span> en móvil muestra una lupa en lugar de la tecla o botón de salto de línea (Tecla Enter en los teclados).</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="tel"&gt;
+                        </code>
+                    </figcaption>
+                        <img class="small-image" src="../assets/imgs/formularios/inputs-moviles/type-tel.png" alt="Input de tipo teléfono">
+                </figure>
+                <p>En los inputs de tipo <span class="emphasis">teléfono</span>, el teclado cambia  a numérico totalmente para facilitar el marcado del número que necesitemos.</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="password"&gt;
+                        </code>
+                    </figcaption>
+                        <img class="small-image" src="../assets/imgs/formularios/inputs-moviles/type-password.png" alt="Input de tipo password">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">Así muestran los navegadores lo que escribimos en un input de tipo password.</figcaption>
+                        <img src="../assets/imgs/formularios/inputs-moviles/type-password-2.png" alt="Input de tipo password">
+                </figure>
+                <p>Los inputs de tipo <span class="emphasis">password</span>, agregan una llave como muestra la imagen para acceder a el gestor de contraseñas del sistema para facilitar el acceso a las mismas.</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="email"&gt;
+                        </code>
+                    </figcaption>
+                        <img class="small-image" src="../assets/imgs/formularios/inputs-moviles/type-mail.png" alt="Input de tipo Email">
+                </figure>
+                <p>Los input de tipo <span class="emphasis">email</span> muestran un <span class="emphasis">@</span> como muestra el cuadrado rojo. También pueden sugerir correos electrónicos en la parte marcada con el cuadrado amarillo, pero eso depende de configuraciones de usuario.</p>
+
+                <figure class="figure">
+                    <figcaption class="figcaption">
+                        <code>
+                            &lt;input type="url"&gt;
+                        </code>
+                    </figcaption>
+                        <img class="small-image" src="../assets/imgs/formularios/inputs-moviles/type-url.png" alt="Input de tipo URL">
+                </figure>
+                <p>Lo inputs de tipo <span class="emphasis">URL</span> muestran sugerencias de urls anteriormente visitadas y además como muestra el cuadrado rojo lo que normalmente es la coma o los emojis, se cambia a una barra inclinada ya que las urls se sirven de este símbolo muchísimas veces.</p>
+           </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-d_fomularios.html" title="Sección Formularios del curso (parte cuatro)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-f_formularios.html" title="Sección Formularios del curso (parte seis)">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

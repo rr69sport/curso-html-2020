@@ -58,11 +58,11 @@
                             &lt;address&gt;&lt;/address&gt;
                         </code>
                     </dt>
-                    <dd class="definition-list__desc">Se utiliza para aportar información de contacto para el <span class="emphasis">article</span> más cercano o para todo el body.</dd>
+                    <dd class="definition-list__desc">Se utiliza para aportar información de contacto para el <span class="emphasis">article</span> más cercano o para todo el body. <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/address#example" title="Ejemplo de la ateiquta 'address' de la MDN">Ejemplo de la MDN</a>.</dd>
                 </dl>
                 <figure class="figure">
                     <figcaption class="figcaption">Etiqueta address</figcaption>
-                    <img src="../assets/imgs/address.png" alt="Ejemplo de uso de la etiqueta address">
+                    <img src="../assets/imgs/etiquetas_de_bloque/address.png" alt="Ejemplo de uso de la etiqueta address">
                 </figure>
             </article>
             <article id="blockquote-tag" class="article">
@@ -73,20 +73,77 @@
                             &lt;blockquote&gt;&lt;/blockquote&gt;
                         </code>
                     </dt>
-                    <dd class="definition-list__desc">Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo <code>cite=""</code> para poner un enlace al documento original o fuente.</dd>
+                    <dd class="definition-list__desc">Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo (opcional) <code>cite=""</code> para poner un enlace al documento original o fuente, esto no lo convierte en un enlace, es simplemente para que el navegador sepa de donde viene esa información.</dd>
                 </dl>
                 <figure class="figure">
                     <figcaption class="figcaption">Ejemplo de blockquote estricto</figcaption>
-                    <img src="../assets/imgs/blockquote.png" alt="Ejemplo de uso de la etiqueta blockquote">
+                    <img src="../assets/imgs/etiquetas_de_bloque/blockquote.png" alt="Ejemplo de uso de la etiqueta blockquote">
                 </figure>
                 <blockquote class="blockquote" cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/blockquote">
-                    <p><strong>blockquote</strong> tiene un hermano menor, <code>&lt;q&gt;&lt;/q&gt;</code>. <em>Blockquote</em> sirve para citas en bloque, y <em>q</em> para citas en línea.</p>
-                    <p>A diferencia de <em>q</em>, <em>blockquote</em> no entrecomilla los contenidos, debe hacerlo el autor (con CSS).</p>
+                    <p>blockquote tiene un hermano menor, <code>&lt;q&gt;&lt;/q&gt;</code>. Blockquote sirve para citas en bloque, y <a href="./h_elementos-de-linea.html#tag-q" title="Etiqueta Q">q</a> para citas en línea.</p>
+                    <p>A diferencia de <a href="./h_elementos-de-linea.html#tag-q" title="Etiqueta Q">q</a>, <em>blockquote no entrecomilla los contenidos</em>, debe hacerlo el autor (con CSS).</p>
                 </blockquote>
             </article>
+            <article id="tag-pre" class="article">
+                <h2>Etiqueta Etiqueta <code>&lt;pre&gt;</code></h2>
+                <dl class="definition-list">
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;pre&gt;&lt;/pre&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se utiliza para tener código preformateado que necesita ser representado igual que se escribió. Se utiliza mucho para escribir letras de canciones o poemas, también para mostrar código que queremos mostrar al usuario.</dd>
+                </dl>
+                <p>Algo importante, es que respeta los saltos de línea y espacios en blanco, eso significa que lo que contenga se representará exactamente como se escribió, por lo tanto si la etiqueta <code>&lt;pre&gt;</code> tiene indentación y el contenido también, eso se representará en pantalla.</p>
+                <div class="two-columns">
+                    <figure class="figure">
+                        <figcaption class="figcaption">Etiqueta pre sin indentar</figcaption>
+                        <img src="../assets/imgs/etiquetas_de_bloque/etiqueta-pre-sin-indentar.png" alt="Etiqueta pre sin indentar">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption">Vista navegador de pre sin indentar</figcaption>
+                        <img src="../assets/imgs/etiquetas_de_bloque/etoqueta-pre-navegador-sin-indentar.png" alt="Vista navegador etiqueta pre sin indentar">
+                    </figure>
+                </div>
+                <div class="two-columns">
+                    <figure class="figure">
+                        <figcaption class="figcaption">Etiqueta pre con indentación</figcaption>
+                        <img src="../assets/imgs/etiquetas_de_bloque/etiqueta-pre-indentada.png" alt="Etiqueta pre con indentación">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption">Vista navegador de pre indentada</figcaption>
+                        <img src="../assets/imgs/etiquetas_de_bloque/etiqueta-pre-navegador-indentada.png" alt="Etiqueta pre vista navegador con indentación">
+                    </figure>
+                </div>
+            </article>
+            <article id="tag-div" class="article">
+                <h2>Etiqueta <code>&lt;div&gt;</code></h2>
+                <dl class="definition-list">
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;div&gt;&lt;/div&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Se usa como una división del documento, semánticamente no significa nada, es un contenedor genérico que se usa generalemente para dar estilos a través de css o para usar algo denominado "delegación de eventos" en JavaScript.</dd>
+                </dl>
+                <p>Por ejemplo, en la etiqueta <a href="#tag-pre">pre</a> descrita arriba, para que las imágenes se vean una al lado de la otra, se usó una etiqueta div, y por css se declaró que fueran dos columnas.</p>
+                <figure class="figure">
+                    <figcaption class="figcaption">Etiqueta div</figcaption>
+                    <img src="../assets/imgs/etiquetas_de_bloque/etiqueta-div.png" alt="Uso de la etiqueta div">
+                </figure>
+            </article>
             <article class="article">
-                <h2>Etiqueta pre</h2>
-                <p>FALTA</p>
+                <h2>Etiqueta <code>&lt;hr/&gt;</code></h2>
+                <dl class="definition-list definition-list--full-description">
+                    <dt class="definition-list__def">
+                        <code>
+                            &lt;hr&gt;
+                        </code>
+                    </dt>
+                    <dd class="definition-list__desc">Horizontal rule</dd>
+                    <dd class="definition-list__desc">Se utiliza para decirle al navegador que vamos a cambiar de tema.</dd>
+                </dl>
+                <p>Visualemente se representa con una línea, aunque no sirve para tal motivo. Tiene un significado semántico y su uso correcto es por ejemplo: Un cambio de escena en una historia o una transición a otro tema dentro de una sección de un libro.</p>
             </article>
         </main>
         <footer>

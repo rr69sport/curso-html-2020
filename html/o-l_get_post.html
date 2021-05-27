@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Método GET y Método POST</title>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+        <meta name="author" content="@rr69sport" />
+        <meta name="description" content="Curso de HTML5 dictado en YouTube por @DorianDesings" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Curso de HTML5 versión 2020" />
+        <meta property="og:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <meta name="twitter:title" content="Curso de HTML5 versión 2020" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardRamSua" />
+        <meta name="twitter:creator" content="@RichardRamSua" />
+        <meta name="twitter:description" content="Resumen del curso de HTML5 que dicta @DorianDesings en YouTube" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body id="body" class="body">
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-k_formularios.html" title="Sección formularios del curso (parte once)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./" title="de que trata la sección siguiente">Siguiente sección</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Método GET y Método POST</h1>
+            </header>
+            <article>
+                <h2>Método GET</h2>
+                <p>El método GET es el que se ejecuta cuando entramos a una página a través de la url (https://www.google.com), es el método por defecto. Los dos métodos se establecen en el formulario por metodo del atributo <code>method=""</code> debe estar asignado además el atributo <code>actions=""</code> con un archivo linkado con instrucciones de qué hacer con la información del formulario.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        Código de ejemplo de <code>method="GET"</code>
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-GET-code.png" alt="Código de ejemplo del método GET">
+                </figure>
+                <p>El archivo <code>enviar.html</code> no existe, por lo tanto si intentamos enviar el formulario nos dará un error.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>method="GET"</code> Error al intentar enviar el formulario
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-GET-view-err.png" alt="Método GET Error de archivo">
+                </figure>
+                <p>Una última cosa sobre el método GET, y es que si se dieron cuenta, cuando se muestra el error de <code>Cannot GET</code> en la URL se ve un signo de interrogación, después de esa interrogación, irían los campos que se están enviando del formulario. Por eso es que es muy importante el atributo <code>name=""</code> en los campos de formulario, porque si no lo ponemos no estamos enviando información realmente.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>method="GET"</code> Error al intentar enviar los datos a través de la url sin el atributo name en los campos
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-GET-view-err-query.png" alt="Método GET sin atributos name en los campos de formulario">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>method="GET"</code> Código con atributo <code>name=""</code>
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-GET-with-name-code.png" alt="Método GET con atributos name en los campos de formulario">
+                </figure>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>method="GET"</code> Código con los datos que se van a enviar a través de la URL
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-GET-with-name-view.png" alt="Método GET con atributos name en los campos de formulario">
+                </figure>
+                <p>Como se puede ver ahora sí hay datos para enviar desde el formulario por medio de la URL.</p>
+            </article>
+            <article>
+                <h2>Método POST</h2>
+                <p>El método POST por el contrario en vez de acceder a la página por medio de la URL, lo que hace es podría decirse enviar el formulario por "detrás" de la página.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        Código de ejemplo de <code>method="POST"</code>
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-POST-code.png" alt="Código de ejemplo del método POST">
+                </figure>
+                <p>El archivo <code>index.html</code> no existe, por lo tanto si intentamos enviar el formulario nos dará un error.</p>
+                <figure class="figure no-margin-top">
+                    <figcaption class="figcaption">
+                        <code>method="POST"</code> Error al intentar enviar el formulario
+                    </figcaption>
+                    <img src="../assets/imgs/formularios/method-POST-view-err.png" alt="Método POST Erro de archivo">
+                </figure>
+                <p>Como se puede ver ahora el erro es distinto, ya no nos da un <em>Cannot GET</em> sino que nos da un <code>error 405</code>.</p>
+            </article>
+        </main>
+        <footer>
+            <p>El curso lo dicta <a target="_blank" href="https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" title="Curso HTML5 2020 en video">Dorian Desings (Canal de YouTube)</a>, y tiene la validación de la <a target="_blank" href="https://validator.w3.org" title="Validador HTML de la W3C">W3C</a>. El curso se basa en la documentación brindada por la <a target="_blank" href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" title="Especificación sobre un documento HTML de la MDN">MDN</a>.</p>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="../">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./o-k_formularios.html" title="Sección formularios del curso (parte once)">Sección anterior</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="./" title="de que trata la sección siguiente">Siguiente sección</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--go-top">
+                        <a class="main-menu__link main-menu__link--go-top" href="#body">Ir arriba</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
