@@ -31,12 +31,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
 figure {
     margin: 0;
 }
@@ -180,9 +174,21 @@ figure {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.font-small {
+    font-size: 75%;
+}
 .small-image {
     max-width: 400px;
 }
 .no-margin-top {
     margin-top: 0;
+}
+.margin-left {
+    margin-left: 1.5rem;
+}
+.flex {
+    display: flex;
+}
+.flex-auto {
+    flex: 1 1 0;
 }
